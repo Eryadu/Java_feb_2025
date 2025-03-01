@@ -33,6 +33,7 @@ based system, so it need a number of command to install
 
 ## Commands
 
+
 git status --  git does not understand the repository
 
 git init - to initialize the empty git repository
