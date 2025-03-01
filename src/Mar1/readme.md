@@ -42,3 +42,38 @@ Test test = new Test(int x ); -- whole is called object.
 ## JVM, JRE (Java Run time Environment), JDK (Java Development Kit)??
 ## JVM (Java virtual machine) ----> jvm wants to call the main method
  that's why main method is static
+
+## In Java, static variables are stored in the Method Area of the JVM (Java Virtual Machine) memory. 
+-- The Method Area is a part of the heap memory and is shared among all threads. 
+-- It is used to store class-level data, including:
+a. Static variables
+b. Class metadata (e.g., class name, method information, field information)
+c. Constant pool (e.g., string literals, constants)
+
+## Key Points:
+
+-- Static variables are allocated memory when the class is loaded by the JVM.
+-- They remain in memory for the entire duration of the application, as long as the class is loaded.
+-- Static variables are shared across all instances of the class.
+
+## Memory Breakdown in JVM:
+
+1. Heap Memory: Stores objects and arrays.
+   Includes the Method Area (for static variables and class metadata).
+2. Stack Memory: Stores local variables and method call frames.
+3. PC Register: Tracks the current execution point.
+4. Native Method Stack: Used for native method calls.
+
+
+## Static bLock
+-- When ever load class, static block call first then any static method
+-- useful to create connection
+
+## Instance block
+-- whenever object will creat. Instance block can be called without creating objects.
+
+--Static
+1.variable
+2.method
+3.classes  -- static inner class, Inner class, Anonymous inner class
+4.blocks
