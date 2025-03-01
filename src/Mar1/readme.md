@@ -22,6 +22,8 @@ i.e. internet -- everyone is sharing single variable to save memory/ dividing sp
 
 static int x =10;
 
+-- Static Method -- We don't need to create object to call static method as it belongs to class not object of class.
+
 ## Memory
 stack and heap
 
@@ -36,3 +38,7 @@ stack and heap
 Test test = new Test(int x ); -- whole is called object.
 -- new keyword is used to give memory
 -- test is reference variable only
+
+## JVM, JRE (Java Run time Environment), JDK (Java Development Kit)??
+## JVM (Java virtual machine) ----> jvm wants to call the main method
+ that's why main method is static
