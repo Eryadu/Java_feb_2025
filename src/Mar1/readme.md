@@ -68,6 +68,10 @@ c. Constant pool (e.g., string literals, constants)
 ## Static bLock
 -- When ever load class, static block call first then any static method
 -- useful to create connection
+-- Static blocks are executed only once when the class is loaded.
+-- They are useful for static initialization and one-time setup tasks.
+-- They cannot access instance variables or methods.
+-- Multiple static blocks are executed in the order they appear.
 
 ## Instance block
 -- whenever object will creat. Instance block can be called without creating objects.
