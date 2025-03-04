@@ -75,6 +75,10 @@ c. Constant pool (e.g., string literals, constants)
 
 ## Instance block
 -- whenever object will creat. Instance block can be called without creating objects.
+-- Instance blocks are executed every time an object is created, before the constructor's body.
+-- They are useful for common initialization tasks across multiple constructors.
+-- They can access both instance and static variables.
+-- Multiple instance blocks are executed in the order they appear.
 
 --Static
 1.variable
