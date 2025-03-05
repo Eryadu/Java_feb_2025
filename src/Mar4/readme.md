@@ -18,3 +18,6 @@ String company = "Pragra"
 String orgnization = "Pragra"
 
 2. Using new keyword -- create new memory outside SCP somewhere in heap, everytime object is created.
+
+
+-- == check the reference and .equals() -- to check content comparison
