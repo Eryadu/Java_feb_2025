@@ -1,6 +1,6 @@
 ## Version control System
 
--- atype of tool which manages the code/project
+-- a type of tool which manages the code/project
 multiple developers can collaborate and it manages the version also
 or history
 

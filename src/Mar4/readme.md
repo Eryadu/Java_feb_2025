@@ -21,3 +21,13 @@ String orgnization = "Pragra"
 
 
 -- == check the reference and .equals() -- to check content comparison
+
+## String methods
+
+1. contain() --> string.contain("Keyword to search in given string").-- It returns boolean value.
+2. replace() --> string.replace("Keyword to be replaced" , "New keyword") -- Every instance (keyword) would be changed
+-- with new instance (keyword).
+3. substring() --> string.substring(BeginIndex), string.substring(BeginIndex, EndIndex)
+4. concatenate() --> when string conct with Primitive DataType (i.e. int, float,char) then it automatically typeCasted to
+   String. --- When string conct with Non-Primitive DataType (i.e. Array), then Java try to call implicitly .tostring()
+   method and the return the value
