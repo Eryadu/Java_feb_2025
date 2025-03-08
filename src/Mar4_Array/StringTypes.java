@@ -1,4 +1,4 @@
-package Mar4;
+package Mar4_Array;
 
 public class StringTypes {
     public static void main(String[] args) {

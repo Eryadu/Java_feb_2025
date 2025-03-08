@@ -1,4 +1,4 @@
-package Mar4;
+package Mar4_Array;
 
 import java.util.Scanner;
 

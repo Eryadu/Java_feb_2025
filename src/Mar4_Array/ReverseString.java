@@ -1,4 +1,4 @@
-package Mar4;
+package Mar4_Array;
 
 public class ReverseString {
     public static void main(String[] args) {

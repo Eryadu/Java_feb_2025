@@ -1,4 +1,4 @@
-package Mar8;
+package Mar8_Inheritance;
 
 public class StringDemo {
     public static void main(String[] args) {

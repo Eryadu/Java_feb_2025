@@ -1,4 +1,4 @@
-package Mar8.Inheritance;
+package Mar8_Inheritance.Inheritance;
 
 public class Computer {
     String brand ;
