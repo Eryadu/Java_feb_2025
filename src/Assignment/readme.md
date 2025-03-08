@@ -3,7 +3,7 @@
 
 number[] = 10,30,43,54,23,543,43,32
 
-1. Reverse the array 
+1. Reverse the array -Done
 2. find the maximum element 
 3. find the minimum element 
 4. find the second maximum 
