@@ -18,6 +18,18 @@ public class StringDemo {
         System.out.println(sb2); // it refers to same object sb.
         System.out.println(sb.length());
         System.out.println(sb2.length());
+
+        System.out.println(" -------- String Builder------");
+        StringBuilder sb1 = new StringBuilder("Pragra");
+        System.out.println(sb);
+        System.out.println(sb1.length());
+        StringBuilder sb3 = sb1.append("Corporation");
+        System.out.println(sb1); // StringBuilder are mutable
+        System.out.println(sb3); // it refers to same object sb.
+        System.out.println(sb1.length());
+        System.out.println(sb3.length());
+
+
     }
 }
 
