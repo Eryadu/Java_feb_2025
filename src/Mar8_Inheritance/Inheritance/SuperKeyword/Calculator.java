@@ -1,4 +1,4 @@
-package Mar8_Inheritance.Inheritance;
+package Mar8_Inheritance.Inheritance.SuperKeyword;
 
 public class Calculator {
     int x =50 , y =10;

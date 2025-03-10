@@ -1,4 +1,4 @@
-package Mar8_Inheritance.Inheritance;
+package Mar8_Inheritance.Inheritance.SuperKeyword;
 
 public class MainSuperKeyword {
     public static void main(String[] args) {

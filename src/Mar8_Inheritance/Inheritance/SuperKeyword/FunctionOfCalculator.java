@@ -1,6 +1,6 @@
-package Mar8_Inheritance.Inheritance;
+package Mar8_Inheritance.Inheritance.SuperKeyword;
 
-public class FunctionOfCalculator extends Calculator{
+public class FunctionOfCalculator extends Calculator {
     int z;
     int x=10, y=20;
 
