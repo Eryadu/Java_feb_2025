@@ -2,7 +2,8 @@ package Assignment.Array;
 
 public class SecondMax {
     public static void main(String[] args) {
-        int [] arr = {10,2,21,22,5,32,1,45,6,345,0,8,54};
+        Integer [] arr = {10,2,21,22,5,32,1,45,6,345,0,8,54};
+        //int [] arr = {10,2,21,22,5,32,1,45,6,345,0,8,54};
         int len = arr.length;
         System.out.print("Array Elements are : ");
         for(int nu : arr)
