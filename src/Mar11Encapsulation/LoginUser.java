@@ -1,8 +1,8 @@
 package Mar11Encapsulation;
 
 public class LoginUser {
-    String userName;
-    String passWord;
+    private String userName;
+    private String passWord;
 
     public LoginUser(String username, String passWord) {
         this.userName = username;
