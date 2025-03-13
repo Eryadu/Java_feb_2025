@@ -28,11 +28,11 @@ public class FilePermission {
     }
 
     public void accessPermission(String str){
-        if ( this.isReadOnly == str)
+        if ( this.isReadOnly.equalsIgnoreCase(str))
         {
             System.out.println("User can read only." );
         }
-        else if (this.isWriteOnly == str){
+        else if (this.isWriteOnly.equalsIgnoreCase(str)){
             System.out.println("User can read and write.");
         }
 

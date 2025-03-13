@@ -4,9 +4,16 @@ public class LoginUser {
     private String userName;
     private String passWord;
 
+
+
+    public LoginUser() {
+        System.out.println("This is default constructor.");
+    }
     public LoginUser(String username, String passWord) {
+        this(); // this() is used to call default constructor.
         this.userName = username;
         this.passWord = passWord;
+        //this(); // this gives me error because this() method should be always first statement in constructor and same with super();
     }
 
     public String getUsername() {
