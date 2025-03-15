@@ -6,10 +6,10 @@ public class Employee {
     private String id;
     private NameComposition name ; // FirstName MiddleName LastName
     private String email;
-    private String address;
+    private Address address;
     private double salary;
 
-    public Employee(String id, NameComposition name, String email, String address, double salary) {
+    public Employee(String id, NameComposition name, String email, Address address, double salary) {
         this.id = id;
         this.name = name;
         this.email = email;
@@ -41,11 +41,11 @@ public class Employee {
         this.email = email;
     }
 
-    public String getAddress() {
+    public Address getAddress() {
         return address;
     }
 
-    public void setAddress(String address) {
+    public void setAddress(Address address) {
         this.address = address;
     }
 
