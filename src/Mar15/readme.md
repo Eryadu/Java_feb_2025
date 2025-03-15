@@ -3,10 +3,11 @@ typescript to go ?
 java compiler written in which language?
 compiler?
 Diff between method overloading and overriding?
+
 Upcasting ?? child class object assigned to parent class ref
 
 //upcasting (create the object of child class, but it refers to parent class during compile time)
-// but at run time it ref to actual (child child).
+// but at run time it ref to actual (child class (method or variable)).
 // System.out.println(rectangle.perimeter); // we can't access rectangle variable, just access whatever (method or variable)     
 //  in shape class (parent class) else other all variable or method are hidden. Property of PolyMorphism to hide data.
 
