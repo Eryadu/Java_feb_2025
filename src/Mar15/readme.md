@@ -1,4 +1,5 @@
 typescript to go ?
+Why use string instead of int??
 
 java compiler written in which language?
 compiler?
@@ -24,3 +25,14 @@ Run time -- > check type of method and type of object which is being called
 ## annotation used at compile time to check either we are overriding (any other) the correct method 
 
 ## Method overridden --same name but different implementation. It achieved only when we do inheritance
+
+## SOLID Principal
+S- Single responsibility
+O- open close principal --- open for extension but close for modification 
+
+ ## IS_A relationship inheritance work on this relationship.
+
+## Has_A_relationship -->composition i.e. name(composite) -- firstname middlename lastname(entity-- cannot break further)
+
+
+## Abstraction showing only essential details

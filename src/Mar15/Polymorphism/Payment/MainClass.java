@@ -2,6 +2,10 @@ package Mar15.Polymorphism.Payment;
 
 public class MainClass {
     public static void main(String[] args) {
+
+        // object of CreditCard class
+        // assign to Payment class (Upcasting)
+
         Payment cc = new CreditCard();
         System.out.println("Payment of Credit card is : " + cc.payMent());
         /*CreditCard cc1 = new CreditCard();
