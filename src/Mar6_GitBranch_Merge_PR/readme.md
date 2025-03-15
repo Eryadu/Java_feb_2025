@@ -148,5 +148,3 @@ Best Practices to Avoid Merge Conflicts:
 - Deploy
 - Merge
 ## 8:45 Content modify in master to test merge conflict
-## 8:37 Content modify in feature/branch to test merge conflict
-## 8:45 Content modify in master to test merge conflict
