@@ -148,4 +148,4 @@ Best Practices to Avoid Merge Conflicts:
 - Deploy
 - Merge
 
-## 8:37 Content added in feature branch
+## 8:37 Content modify in feature/branch to test merge conflict
