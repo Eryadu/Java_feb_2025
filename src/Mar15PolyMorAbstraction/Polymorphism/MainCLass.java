@@ -1,4 +1,4 @@
-package Mar15.Polymorphism;
+package Mar15PolyMorAbstraction.Polymorphism;
 
 public class MainCLass {
     public static void main(String[] args) {

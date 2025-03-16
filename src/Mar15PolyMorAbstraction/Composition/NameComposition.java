@@ -1,4 +1,4 @@
-package Mar15.Composition;
+package Mar15PolyMorAbstraction.Composition;
 
 public class NameComposition {
     private String firstName;

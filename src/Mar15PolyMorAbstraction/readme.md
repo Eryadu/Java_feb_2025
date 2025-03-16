@@ -1,9 +1,7 @@
-typescript to go ?
-Why use string instead of int??
 
 java compiler written in which language?
 compiler?
-Diff between method overloading and overriding?
+
 
 Upcasting ?? child class object assigned to parent class ref
 
@@ -34,5 +32,19 @@ O- open close principal --- open for extension but close for modification
 
 ## Has_A_relationship -->composition i.e. name(composite) -- firstname middlename lastname(entity-- cannot break further)
 
-
+## Composition
 ## Abstraction showing only essential details
+
+1. abstract class [0-100%]
+2. Interface [100%]
+
+-- Property of abstract 
+
+-- It can contain abstract and non-abstract methods both under abstract class
+-- Abstract method does not have body
+-- Cannot create Object of abstract class
+-- if a class contains abstract method
+
+any non-abstract class inherit from abstract class , must impliment all abstract method
+
+## concrete methode opposite to abstract method

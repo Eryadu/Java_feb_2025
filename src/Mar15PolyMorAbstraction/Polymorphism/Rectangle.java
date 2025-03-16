@@ -1,4 +1,4 @@
-package Mar15.Polymorphism;
+package Mar15PolyMorAbstraction.Polymorphism;
 
 public class Rectangle extends Square {
     double length = 12.00;

@@ -1,4 +1,4 @@
-package Mar15.Polymorphism.Payment;
+package Mar15PolyMorAbstraction.Polymorphism.Payment;
 
 public class Interact extends Payment {
     @Override

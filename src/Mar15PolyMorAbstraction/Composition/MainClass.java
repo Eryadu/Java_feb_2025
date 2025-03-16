@@ -1,4 +1,4 @@
-package Mar15.Composition;
+package Mar15PolyMorAbstraction.Composition;
 
 public class MainClass {
     public static void main(String[] args){

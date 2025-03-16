@@ -1,4 +1,4 @@
-package Mar15.Polymorphism;
+package Mar15PolyMorAbstraction.Polymorphism;
 
 public class Square extends Shape {
     double side = 10.00;
