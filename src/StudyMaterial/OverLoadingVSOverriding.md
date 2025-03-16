@@ -1,6 +1,6 @@
 ## Diff between method overloading and overriding?
 
-## Rules of Overriding
+## Rules of Overriding -- Overriding happens in inheritance
 1. Arguments must be the same, and return types must be compatible with superclass.The contract of superclass defines how 
    other code can use a method. Whatever the superclass takes as an argument, the subclass overriding the method must use 
    that same argument. And whatever the superclass declares as a return type, the overriding method must declare either the 
@@ -13,7 +13,7 @@
    at runtime the JVM slammed the door shut because the overriding version called at runtime is private!
 
 
-## Rules for Overloading a method
+## Rules for Overloading a method -- method overloading happen in same class
 Method overloading is nothing more than having two methods with the same name but different argument lists. Period. 
 There’s no polymorphism involved with overloaded methods!Overloading lets you make multiple versions of a method, with 
 different argument lists, for convenience to the callers. For example, if you have a method that takes only an int, the 

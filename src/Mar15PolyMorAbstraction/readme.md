@@ -3,18 +3,19 @@ java compiler written in which language?
 compiler?
 
 
-Upcasting ?? child class object assigned to parent class ref
-
-//upcasting (create the object of child class, but it refers to parent class during compile time)
-// but at run time it ref to actual (child class (method or variable)).
-// System.out.println(rectangle.perimeter); // we can't access rectangle variable, just access whatever (method or variable)     
-//  in shape class (parent class) else other all variable or method are hidden. Property of PolyMorphism to hide data.
+## Upcasting -- child class object assigned to parent class ref
+i.e. Shape sh = new Rectangle();
+Reference type             Object type
+Remember, the compiler looks at the reference type to decide whether you can call a particular method on that reference.
+With a "sh" reference to a "Shape", the compiler cares only if class "Shape" has the method you’re invoking on a "sh" reference. 
+But at runtime, the JVM does not look at the reference type ("sh") but at the actual Rectangle object on the heap.
+So if the compiler has already approved the method call, the only way it override!
 
 ## Compile time (Static polymorphism) to check signature or methode (method overloading happen in same class)
-javac test.java -----> test.class // to compile the code
+javac test.java -----> test.class // to compile the code // command used in terminal to compile program
 
 ## Run time -- to check actual logic or output (method overriding happen during inheritance, dynamic polymorphism)
-java test ------> to run the class
+java test ------> to run the class // command used in terminal to run program 
 
 ## Polymorphism
 Compile time
