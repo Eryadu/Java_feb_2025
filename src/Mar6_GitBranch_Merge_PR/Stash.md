@@ -14,7 +14,7 @@ doesn’t warrant a commit.
 Some Git operations (e.g., pulling changes, switching branches) require a clean working directory. Stashing lets you 
 temporarily clear your working directory to perform these operations.
 -- Temporarily Save Work:
-If you need to pause your current work to address something urgent, stashing lets you save your progress and 
+If you need to pause your current work to addressComposition something urgent, stashing lets you save your progress and 
 return to it later.
 
 -- When to Use git stash:

@@ -1,13 +1,17 @@
 package Mar15PolyMorAbstraction.Composition;
 
-public class Address {
+public class AddressComposition {
     private String aptNum;
     private String street;
     private String city;
     private String country;
     private String postalCode;
 
-    public Address(String aptNum, String street, String city, String country, String postalCode) {
+    // Create constructor to declare variable
+    // Create getter & setter to access private variables
+    // declare toString method to display string output
+
+    public AddressComposition(String aptNum, String street, String city, String country, String postalCode) {
         this.aptNum = aptNum;
         this.street = street;
         this.city = city;

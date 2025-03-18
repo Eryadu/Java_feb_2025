@@ -134,16 +134,16 @@ String state;
 
 class Person {
 String name;
-Address address; // Person HAS-A Address
+Address addressComposition; // Person HAS-A Address
 
-    Person(String name, Address address) {
+    Person(String name, Address addressComposition) {
         this.name = name;
-        this.address = address;
+        this.addressComposition = addressComposition;
     }
 
     void display() {
         System.out.println("Name: " + name);
-        address.display();
+        addressComposition.display();
     }
 }
 

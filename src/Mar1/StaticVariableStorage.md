@@ -35,7 +35,7 @@ A method call frame typically contains the following information:
 - Local Variables:
 Stores the method's local variables, including parameters passed to the method.
 Each variable is stored in a slot within the frame.
-Primitive types (e.g., int, boolean) store their values directly, while object references store the memory address of the
+Primitive types (e.g., int, boolean) store their values directly, while object references store the memory addressComposition of the
 object in the heap.
 - Operand Stack:
 Used for intermediate calculations during method execution.
@@ -57,7 +57,7 @@ When a method is called, a new frame is created and pushed onto the call stack.
 The frame stores all the necessary information for the method to execute, including local variables and the operand stack.
 As the method executes, it uses the operand stack for calculations and the local variables for storing data.
 When the method completes, its frame is popped off the stack, and control returns to the calling method using the 
-return address.
+return addressComposition.
 Example:
 
 

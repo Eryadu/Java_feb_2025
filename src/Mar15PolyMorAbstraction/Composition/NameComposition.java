@@ -5,6 +5,10 @@ public class NameComposition {
     private String middleName;
     private String lastName;
 
+    // Create constructor to declare variable
+    // Create getter & setter to access private variables
+    // declare toString method to display string output
+
     public NameComposition(String firstName, String middleName, String lastName) {
         this.firstName = firstName;
         this.middleName = middleName;

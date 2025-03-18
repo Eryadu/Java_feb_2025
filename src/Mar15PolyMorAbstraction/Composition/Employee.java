@@ -2,16 +2,19 @@ package Mar15PolyMorAbstraction.Composition;
 
 public class Employee {
     private String id;
-    private NameComposition name ; // FirstName MiddleName LastName
+    private NameComposition name ; // FirstName MiddleName LastName (break the Name using composition)
     private String email;
-    private Address address;
+    private AddressComposition addressComposition; // break the Address using composition
     private double salary;
 
-    public Employee(String id, NameComposition name, String email, Address address, double salary) {
+    // Create constructor to declare variable
+    // Create getter & setter to access private variables
+    // declare toString method to display string output
+    public Employee(String id, NameComposition name, String email, AddressComposition addressComposition, double salary) {
         this.id = id;
         this.name = name;
         this.email = email;
-        this.address = address;
+        this.addressComposition = addressComposition;
         this.salary = salary;
     }
 
@@ -39,12 +42,12 @@ public class Employee {
         this.email = email;
     }
 
-    public Address getAddress() {
-        return address;
+    public AddressComposition getAddress() {
+        return addressComposition;
     }
 
-    public void setAddress(Address address) {
-        this.address = address;
+    public void setAddress(AddressComposition addressComposition) {
+        this.addressComposition = addressComposition;
     }
 
     public double getSalary() {
@@ -61,7 +64,7 @@ public class Employee {
                 "id='" + id + '\'' +
                 ", name=" + name +
                 ", email='" + email + '\'' +
-                ", address='" + address + '\'' +
+                ", address='" + addressComposition + '\'' +
                 ", salary='" + salary + '\'' +
                 '}';
     }
