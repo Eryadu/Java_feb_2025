@@ -1,6 +1,4 @@
-package Mar15PolyMorAbstraction.Composition;
-
-import java.lang.reflect.Type;
+package Mar15PolyMorAbstraction.Composition.Color;
 
 public class MainClassColor {
     public static void main(String[] args) {

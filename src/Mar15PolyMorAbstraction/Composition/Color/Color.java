@@ -1,4 +1,4 @@
-package Mar15PolyMorAbstraction.Composition;
+package Mar15PolyMorAbstraction.Composition.Color;
 
 public class Color {
     private String name;
