@@ -28,12 +28,15 @@
 
 ## Abstraction in Java:
 In Java, abstraction is achieved using:
-1. Abstract Classes: A class declared with the abstract keyword.
-   It can have both abstract methods (without a body) and concrete methods (with a body).
-   Cannot be instantiated directly.
+1. Abstract Classes: 
+-- A class declared with the abstract keyword.
+-- It can have both abstract methods (without a body) and concrete methods (with a body).
+-- Cannot be instantiated directly. (Cannot create Object of abstract class)
+-- if any class inherits from abstract class it must implement all abstract methods.
+   any non-abstract class inherit from abstract class , must implement all abstract method
 2. Interfaces:
-   A blueprint of a class that contains only abstract methods (before Java 8).
-   From Java 8 onwards, interfaces can also have default and static methods.
+-- A blueprint of a class that contains only abstract methods (before Java 8).
+-- From Java 8 onwards, interfaces can also have default and static methods.
 
 -- Example of Abstraction Using Abstract Class:
 

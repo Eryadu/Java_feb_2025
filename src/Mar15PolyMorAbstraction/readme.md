@@ -39,13 +39,13 @@ O- open close principal --- open for extension but close for modification
 1. abstract class [0-100%]
 2. Interface [100%]
 
--- Property of abstract 
+## Property of abstract 
 
--- It can contain abstract and non-abstract methods both under abstract class
--- Abstract method does not have body
--- Cannot create Object of abstract class
--- if a class contains abstract method
+-- Object can not be created for abstract class
+-- abstract methods does not have body
+-- if a class contains abstract method, class must be abstract
+-- an abstract class may or may not have abstract methods...
+-- if any class inherits from abstract class it must implement all abstract methods.
+   any non-abstract class inherit from abstract class , must implement all abstract method
 
-any non-abstract class inherit from abstract class , must impliment all abstract method
-
-## concrete methode opposite to abstract method
+## concrete methode(Have body) opposite to abstract method (Without body)
