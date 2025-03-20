@@ -14,21 +14,36 @@ interface Demo {
 class Meth implements Demo{
     @Override
     public void show() {
-        System.out.println("Hello show");
+        System.out.println("Meth Class");
     }
 
     @Override
     public String display() {
-        return "Hello";
+        return "Meth";
+    }
+}
+class Meth2 extends Meth{
+    @Override
+    public void show() {
+        System.out.println("Meth2 Class");
+        super.show();
+    }
+
+    @Override
+    public String display() {
+        super.display();
+        return "Meth2";
+
     }
 }
 
 public class DemoInterfaces{
     public static void main(String[] args) {
-        Meth meth = new Meth();
+        Meth meth = new Meth2();
         System.out.println(meth.display());
         meth.show();
         meth.hello();
+
         Demo.hello1(); // Static method always called with Interface name, we can't create object of static method.
     }
 }
