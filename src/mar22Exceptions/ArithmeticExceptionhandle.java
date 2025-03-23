@@ -9,18 +9,20 @@ public class ArithmeticExceptionhandle {
         int x = sc.nextInt();
         System.out.println("Enter the Second Number : ");
         int y = sc.nextInt();
-        int result =100;
+        int result=0;
         try {
+
             result = x/y;
+
+        }
+        catch (ArithmeticException e)
+        {
+            System.out.println(result);
+
         }
         /*finally {
             System.out.println("Result is :" +  result); // without catch block it print only declared variable
         }*/
-        catch (ArithmeticException e)
-        {
-           e.printStackTrace();
-
-        }
 
     }
 }
