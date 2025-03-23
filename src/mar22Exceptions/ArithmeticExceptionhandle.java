@@ -13,14 +13,14 @@ public class ArithmeticExceptionhandle {
         try {
             result = x/y;
         }
-        finally {
+        /*finally {
             System.out.println("Result is :" +  result); // without catch block it print only declared variable
-        }
-       /* catch (ArithmeticException e)
+        }*/
+        catch (ArithmeticException e)
         {
            e.printStackTrace();
 
-        }*/
+        }
 
     }
 }
