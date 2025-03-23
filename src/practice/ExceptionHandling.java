@@ -13,11 +13,11 @@ then the method must throw an exception which says ""
         { int c =1;
             if(n==0 && p == 0)
         {
-            throw new Exception("n or p should not be negative.");
+            throw new Exception("n or p should not be zero.");
         }
         if(n<0 || p<0)
         {
-            throw new Exception("java.lang.Exception: n or p should not be negative.");
+            throw new Exception("n or p should not be negative.");
         }
         if (p>=0) {
             for(int i =0; i<p; i++){

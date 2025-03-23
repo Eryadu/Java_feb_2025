@@ -11,7 +11,7 @@ i.e. System comes from lang package (by default)
 optimise the code by import class /package
 i.e. import static java.lang.System.*;
 we dont need to write System.out.println, write out.println; --> it help to optimise the code.
-Packages follow name convention. It should be small letters.
+## Packages follow name convention. It should be small letters.
 
 ## Exception --> which break the normal flow of  execution of the problem
 ## keyword to handle exception
@@ -29,14 +29,13 @@ Throwable is super class in exception
    |
 Exception
     |
-check PPT
+RunTimeException
+   |
+ArithmeticException
 
 ## if it found any exception, it stops there, don't move to next statement until it fixed
 
-Error - we can't handle (downtime) i.e. memory error, power error (Any situation we can't recover gracefully)
-Set heap size ??
-
-## In-term of garbage collector Enhancement in java 8 or java 11?
+## Error - we can't handle (downtime) i.e. memory error, power error (Any situation we can't recover gracefully)
 
 ## Point to note
 -- Finally block
@@ -50,3 +49,5 @@ Set heap size ??
    throws ---> added to the method signature // delicating your responsibility to someone else // someone will handle it
    
 ## Singlton class??
+-- Set heap size ??
+## In-term of garbage collector Enhancement in java 8 or java 11?
