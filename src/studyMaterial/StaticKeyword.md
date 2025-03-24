@@ -20,7 +20,7 @@ static int count = 0; // Static variable
     public static void main(String[] args) {
         Counter c1 = new Counter();
         Counter c2 = new Counter();
-        System.out.println("Total objects created: " + Counter.count); // Output: 2
+        System.out.println("Total objects created: " + Counter.count); // Output: 2 Static keyword accessed by using class name.
     }
 }
 
@@ -84,8 +84,8 @@ System.out.println("Inside static nested class.");
 
 1. Shared Across Instances: Static members are shared by all instances of the class.
 2. Class-Level Access: Static members can be accessed using the class name (e.g., ClassName.staticMember).
-3. No this Reference: Static methods and blocks cannot use the this keyword (since they belong to the class, not an instance).
-4.Memory Efficiency: Static variables are stored in a single memory location, making them memory-efficient.
+3. No this Reference: Static methods and blocks cannot use this keyword (since they belong to the class, not an instance).
+4. Memory Efficiency: Static variables are stored in a single memory location, making them memory-efficient.
 
 ## Limitations:
 1. Static methods cannot access non-static members (variables or methods) directly.
