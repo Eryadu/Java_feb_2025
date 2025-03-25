@@ -1,4 +1,4 @@
-package mar22Exceptions;
+package mar22Singleton;
 
 public class SingletonClass {
     private SingletonClass() {

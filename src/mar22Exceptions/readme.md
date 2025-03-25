@@ -47,7 +47,5 @@ ArithmeticException
 ## to create custom exception
    throw ----> to create a new exception (write logic actually)
    throws ---> added to the method signature // delicating your responsibility to someone else // someone will handle it
-   
-## Singlton class??
--- Set heap size ??
-## In-term of garbage collector Enhancement in java 8 or java 11?
+
+
