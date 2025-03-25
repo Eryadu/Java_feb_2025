@@ -4,9 +4,6 @@ import java.util.Scanner;
 
 public class ArrayOutOfBoundException {
 
-    /*nullpointer
-    Arrayindexoutofbound
-            arithemetic */
     public static void main(String[] args) {
 
         int [] arr = new int[5];

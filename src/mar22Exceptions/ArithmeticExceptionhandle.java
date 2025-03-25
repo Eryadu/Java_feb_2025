@@ -11,12 +11,12 @@ public class ArithmeticExceptionhandle {
         int y = sc.nextInt();
         int result=0;
         try {
-
             result = x/y;
-
         }
         catch (ArithmeticException e)
         {
+            //e.printStackTrace();
+            //System.out.println(e);
             System.out.println(result);
 
         }
