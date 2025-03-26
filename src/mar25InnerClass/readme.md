@@ -4,7 +4,7 @@
 1. Local Inner class
 2. Member Inner class
 3. Static Inner class - V.Imp
-4. Annonymous Inner class - V.Imp
+4. Anonymous Inner class - V.Imp
 
 
 Static??
@@ -13,8 +13,15 @@ Static??
 3. class
 4. block
 
-## Annonymous Inner class - class without name.We use annonymous class to impliment interface with one or two method and
+## Anonymous Inner class - class without name.We use anonymous class to implement interface with one or two method and
    we don't want to create separate class.
--- By using Annonymuos class we can also impliment Abstract Class.
+-- By using Anonymous class we can also implement Abstract Class. 
+   -- Created by new keyword following Interface/class name.
 -- Java 8 Lambda - does not have name
 -- Lambda - AWS - serverless server
+
+Note : We can create Inner class in Anonymous class but problem is that, when try to access the members of Inner class
+       we need to create object of inner class (either by Local inner class method/ Static Inner Class), but we don't have 
+       Outer class name as Outer class is Anonymous. So we can create Inner class in method of Anonymous class.
+
+## We can create the class inside method as well
