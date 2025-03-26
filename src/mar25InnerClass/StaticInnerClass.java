@@ -28,7 +28,7 @@ public class StaticInnerClass {
         innerClass.show(); // to access other method, need to create object of class.
         InnerClass.set(); // to access static method, use class name.
 
-        StaticInnerClass.InnerClass.InnerClass2 inner2 = new InnerClass.InnerClass2();
-        inner2.show2();
+        StaticInnerClass.InnerClass.InnerClass2 inner2 = new InnerClass.InnerClass2(); // create object of inner class of inner
+        inner2.show2(); // Static method can be called with the name of the class
     }
 }
