@@ -64,6 +64,8 @@ nested.display(); // Output: Outer static field: 20
    as final. 
 Note : Local inner class cannot access non-final local variable till JDK 1.7. Since JDK 1.8, it is possible to access 
        the non-final local variable in method local inner class.
+-- Method local inner class can’t be marked as private, protected, static, and transient but can be marked as abstract 
+   and final, but not both at the same time.
    
 ## Example:
 

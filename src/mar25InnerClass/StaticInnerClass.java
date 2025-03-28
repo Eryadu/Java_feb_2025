@@ -5,11 +5,11 @@ public class StaticInnerClass {
     public static void display(){
         System.out.println("You are in Static Outer Class.");
     }
-    static class InnerClass{
+    static class InnerClass{ // Static inner class
         public void show(){
             System.out.println("You are in Static inner Class.");
         }
-        public static void  set(){
+        static void  set(){
             System.out.println("you are in Static Set method.");
         }
 
@@ -29,6 +29,6 @@ public class StaticInnerClass {
         InnerClass.set(); // to access static method, use class name.
 
         StaticInnerClass.InnerClass.InnerClass2 inner2 = new InnerClass.InnerClass2(); // create object of inner class of inner
-        inner2.show2(); // Static method can be called with the name of the class
+        inner2.show2();
     }
 }

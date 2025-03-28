@@ -1,4 +1,4 @@
-package practice;
+package practice.innerClass;
 // Nested Inner Class
 
 public class NestedClass {

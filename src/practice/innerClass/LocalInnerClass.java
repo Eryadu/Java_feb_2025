@@ -1,35 +1,42 @@
 package practice.innerClass;
-// Local Inner class access method 1
+// local inner class, creating class inside method.
 
-/*public class LocalInnerClass {
-    String s = "Hello";
-    void display(){
-        System.out.println("You are in Local Outer Class" + s);
-    }
+public class LocalInnerClass {
     void set(){
         String s1 = "Class";
-        class InnerClass{ // Scope of inner class only inside the method
-                           void get()
-                           {
-                               System.out.println("Local Inner Class" +  s1);
+        abstract class InnerClass{ // Scope of inner class only inside the method
+                         void get(){
+                               System.out.println("Local Inner Class" +  s1); // access the local variable of method
                            }
+                           abstract void show();
                         }
-                          InnerClass inn = new InnerClass(); // Inner class object inside method
-                          inn.get();
+                          /*InnerClass inn = new InnerClass(); // Inner class object inside method
+                          inn.get();*/
+                          class InnerClass2 extends InnerClass{
+                              void get1(){
+                                  System.out.println("Inheritence");
+                              }
+
+                              @Override
+                              void show() {
+                                  System.out.println("Abstract Method");
+                              }
+                          }
+                     InnerClass2 inn2 = new InnerClass2();
+                          inn2.get1();
+                          inn2.get();
+                          inn2.show();
 
         }
 
         public static void main (String[] args){
-        LocalInnerClass linn = new LocalInnerClass(); // Outer class object
-        linn.display();
-        linn.set();
-        }*/
-
-
-//}
+        LocalInnerClass obj = new LocalInnerClass(); // Outer class object
+        obj.set();
+        }
+}
 
 /* Example
-// Java Program to Illustrate Inner class can be
+
 // declared within a method of outer class
 
 // Class 1
@@ -83,23 +90,3 @@ class GFG {
         x.outerMethod();
     }
 }*/
-public class LocalInnerClass {
-    String s = "Hello";
-
-    void set() {
-        String s1 = "Inner Class";
-        class InnerClass { // Scope of inner class only inside the method
-            void get() {
-                System.out.println("Local Inner Class" + s1 );
-            }
-        }
-        InnerClass inn = new InnerClass();
-        inn.get();
-
-    }
-
-    public static void main(String[] args) {
-        LocalInnerClass linn = new LocalInnerClass();
-        linn.set();
-    }
-}
