@@ -1,5 +1,5 @@
 ## Inner class / Nested Class
-   When a class defined inside another class. It used as Encapsulation.
+   When a class defined inside another class. It's used as Encapsulation.
    
 1. Local Inner class
 2. Member Inner class

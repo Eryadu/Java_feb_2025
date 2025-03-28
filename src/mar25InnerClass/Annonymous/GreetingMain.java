@@ -20,9 +20,6 @@ public class GreetingMain {
                 Testing te = new Testing();
                 te.test(); // testing of inner class inside anonymous class
             }
-
-
-
         }; // by defining anonymous class put semicolon of Greeting interface object.
 
         greeting.greet(); // calling method
