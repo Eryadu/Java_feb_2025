@@ -25,3 +25,6 @@ Note : We can create Inner class in Anonymous class but problem is that, when tr
        Outer class name as Outer class is Anonymous. So we can create Inner class in method of Anonymous class.
 
 ## We can create the class inside method as well
+
+Note : Method Local inner classes can’t use a local variable of the outer method until that local variable is not 
+       declared as final. 

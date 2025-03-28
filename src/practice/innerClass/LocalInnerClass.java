@@ -1,7 +1,7 @@
 package practice.innerClass;
 // Local Inner class access method 1
 
-public class LocalInnerClass {
+/*public class LocalInnerClass {
     String s = "Hello";
     void display(){
         System.out.println("You are in Local Outer Class" + s);
@@ -14,34 +14,19 @@ public class LocalInnerClass {
                                System.out.println("Local Inner Class" +  s1);
                            }
                         }
-                          InnerClass inn = new InnerClass();
+                          InnerClass inn = new InnerClass(); // Inner class object inside method
                           inn.get();
 
         }
 
         public static void main (String[] args){
-        LocalInnerClass linn = new LocalInnerClass();
+        LocalInnerClass linn = new LocalInnerClass(); // Outer class object
         linn.display();
         linn.set();
-        }
+        }*/
 
-    // Local Inner class access method 2
-    /*void show(){
-        System.out.println("Hello");
-    }
-    class InnerClass{
-        void display(){
-            System.out.println("Java");
-        }
-    }
-}
-    class Main{
-    public static void main (String[] args){
-        LocalInnerClass.InnerClass inn = new LocalInnerClass().new InnerClass();
-        inn.display();
 
-    }*/
-}
+//}
 
 /* Example
 // Java Program to Illustrate Inner class can be
@@ -98,3 +83,23 @@ class GFG {
         x.outerMethod();
     }
 }*/
+public class LocalInnerClass {
+    String s = "Hello";
+
+    void set() {
+        String s1 = "Inner Class";
+        class InnerClass { // Scope of inner class only inside the method
+            void get() {
+                System.out.println("Local Inner Class" + s1 );
+            }
+        }
+        InnerClass inn = new InnerClass();
+        inn.get();
+
+    }
+
+    public static void main(String[] args) {
+        LocalInnerClass linn = new LocalInnerClass();
+        linn.set();
+    }
+}

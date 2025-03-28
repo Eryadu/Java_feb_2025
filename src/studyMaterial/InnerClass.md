@@ -60,8 +60,12 @@ nested.display(); // Output: Outer static field: 20
 
 3. Local Inner Class:
 -- Defined inside a block of code, such as a method.
--- It can only access final or effectively final local variables of the enclosing block.
-Example:
+-- Method Local inner classes can’t use a local variable of the outer method until that local variable is not declared
+   as final. 
+Note : Local inner class cannot access non-final local variable till JDK 1.7. Since JDK 1.8, it is possible to access 
+       the non-final local variable in method local inner class.
+   
+## Example:
 
 class Outer {
 void outerMethod() {
