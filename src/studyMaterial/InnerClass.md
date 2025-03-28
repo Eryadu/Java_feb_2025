@@ -94,6 +94,8 @@ outer.outerMethod();
 4. Anonymous Inner Class:
 -- A class without a name, defined and instantiated at the same time.
 -- Often used for implementing interfaces or extending classes on the fly.
+-- Any anonymous inner class can implement only one interface at one time. It can either extend a class or implement an 
+   interface at a time.
 Example:
 
 interface Greeting {

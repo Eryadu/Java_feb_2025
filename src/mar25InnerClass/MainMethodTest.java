@@ -1,6 +1,6 @@
 package mar25InnerClass;
 // Inner class to test the main method inside Inner class.
-public class OuterClassTest {
+public class MainMethodTest {
     void outerMethod() {
         System.out.println("Outer Method");
     }
@@ -10,7 +10,7 @@ public class OuterClassTest {
             System.out.println("Inner CLass");
 
 
-            OuterClassTest test = new OuterClassTest();
+            MainMethodTest test = new MainMethodTest();
             test.outerMethod();
         }
     }
