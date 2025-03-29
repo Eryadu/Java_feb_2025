@@ -3,7 +3,7 @@
    
 1. Local Inner class
 2. Member Inner class
-3. Static Inner class - V.Imp
+3. Static Inner class - used ofently V.Imp
 4. Anonymous Inner class - V.Imp
 
 
