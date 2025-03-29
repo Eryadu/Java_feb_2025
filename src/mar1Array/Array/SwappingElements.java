@@ -1,4 +1,4 @@
-package mar1.Array;
+package mar1Array.Array;
 
 public class SwappingElements {
     public static void main(String[] args) {

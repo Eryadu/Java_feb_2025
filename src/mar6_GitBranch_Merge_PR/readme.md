@@ -24,23 +24,23 @@ Develop (Qa/ test) ---> merge and test it
 
 to fetch the remote changes to the local branch
 -- Pulling to Keep up-to-date with Changes
-When working as a team on a project, it is important that everyone stays up to date.
-Any time you start working on a project, you should get the most recent changes to your local copy.
---pull is a combination of 2 different commands:
+   When working as a team on a project, it is important that everyone stays up to date.
+   Any time you start working on a project, you should get the most recent changes to your local copy.
+-- pull is a combination of 2 different commands:
 
 1. fetch
 2. merge
 
 -- Git Fetch
-fetch gets all the change history of a tracked branch/repo.
-So, on your local Git, fetch updates to see what has changed on GitHub.
+   Fetch gets all the change history of a tracked branch/repo.
+   So, on your local Git, fetch updates to see what has changed on GitHub.
 -- Git Merge
-merge combines the current branch, with a specified branch.
+   merge combines the current branch, with a specified branch.
 
---GitPull
-But what if you just want to update your local repository, without going through all those steps?
-pull is a combination of fetch and merge. It is used to pull all changes from a remote repository into the branch you 
-are working on.
+-- GitPull
+   But what if you just want to update your local repository, without going through all those steps?
+   pull is a combination of fetch and merge. It is used to pull all changes from a remote repository into the branch you 
+   are working on.
 
 ## Pull Request [PR] , git bash - merge request
 
@@ -79,7 +79,7 @@ When Used	               Frequently during development.	        When ready to me
 
 Example Workflow:
 
-git checkout -b feature/new-feature
+git checkout -b feature/new-feature // command to create and change repository in single
 
 git add .
 git commit -m "Add new feature"
@@ -102,13 +102,13 @@ A merge conflict occurs in version control systems (like Git) when two or more d
 of a file or codebase, and the system cannot automatically resolve the differences between them. 
 This typically happens during a merge operation, such as when integrating changes from one branch into another.
 
--- Key Causes of Merge Conflicts:
+## Key Causes of Merge Conflicts:
 
 -- Conflicting Changes: Two or more developers modify the same lines of code in different ways.
 -- Deleted Files: One developer deletes a file while another modifies it.
 -- Structural Changes: Changes to file names, directories, or other structural elements conflict with other changes.
 
--- How Merge Conflicts Manifest:
+## How Merge Conflicts Manifest:
 When a conflict occurs, the version control system flags the conflicting sections and asks the user to resolve them manually.
 
 Copy
@@ -126,7 +126,7 @@ Steps to Resolve Merge Conflicts:
 -- Mark as Resolved: Use git add <file> to mark the conflict as resolved.
 -- Complete the Merge: Run git commit to finalize the merge.
 
-Tools to Help Resolve Conflicts:
+## Tools to Help Resolve Conflicts:
 
 -- IDE Integrations: Many IDEs (e.g., VS Code, IntelliJ) have built-in tools to visualize and resolve conflicts.
 -- Diff Tools: Tools like meld, kdiff3, or Beyond Compare can help compare and merge changes.

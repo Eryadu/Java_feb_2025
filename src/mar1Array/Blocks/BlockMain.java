@@ -1,4 +1,4 @@
-package mar1.Blocks;
+package mar1Array.Blocks;
 
 public class BlockMain {
     public static void main(String[] args) {

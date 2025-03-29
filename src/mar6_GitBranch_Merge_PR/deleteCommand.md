@@ -6,11 +6,10 @@ What Happens When You Delete a Branch Locally?
 
 git branch -d branch-name
 or forcefully:
-
 git branch -D branch-name
 it only removes the branch from your local repository. The branch on the remote repository (e.g., GitHub) remains unaffected.
 
--- How to Delete a Branch on GitHub:
+## How to Delete a Branch on GitHub:
 
 To delete a branch on GitHub, you need to explicitly push the deletion to the remote repository.
 Delete the Branch on GitHub:

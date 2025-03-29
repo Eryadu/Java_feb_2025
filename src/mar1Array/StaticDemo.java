@@ -1,4 +1,4 @@
-package mar1;
+package mar1Array;
 
 public class StaticDemo {
 
