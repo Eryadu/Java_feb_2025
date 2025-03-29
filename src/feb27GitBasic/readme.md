@@ -90,4 +90,3 @@ This means you'll need to explicitly specify origin main in future git push or g
 
 1. git remote -v // to check present repository
 2. git remote set-url origin https://github.com/Eryadu/GitAssignment.git // to switch to new repository
-3. 
