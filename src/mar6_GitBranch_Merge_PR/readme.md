@@ -147,7 +147,3 @@ Best Practices to Avoid Merge Conflicts:
 - Review
 - Deploy
 - Merge
-## 8:45 Content modify in master to test merge conflict
-
-## 9:08 to test pull request
-## 9:09 Pull request is colleborative tool to review, discuss and merge.
