@@ -23,7 +23,7 @@ Object 2  -- xtv12sd
 
 Data Structure : how we structure our data for efficient access or storage of data
 
-Its framework for modifying/mainupulating objects
+Its framework for modifying/manipulating objects
 It has set of interfaces and classes which are already defined for us
 
 ## Type safety ??
@@ -33,3 +33,25 @@ Generic --> General form of something, not specific
 Advantage of generic
 1. type safety
 2. flexibility of choosing a collection type/ object type
+
+generic class represent by angular brackets <> with any type of datatypes to provide type safety and flexibility
+
+## Maven  given option to work with LOBBoK and AutoValue library
+It is build tool, project management tool
+
+LOMBOK? library
+boiler plate code
+Autovalue? library
+
+Maven?
+Gradle?
+
+## File Handling
+FileWriter class
+try with resources // no need to close the resource
+try without resource // need to close every time 
+
+FileReader class
+
+io path
+nio path
