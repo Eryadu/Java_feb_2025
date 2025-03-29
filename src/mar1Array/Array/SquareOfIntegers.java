@@ -1,4 +1,4 @@
-package mar1.Array;
+package mar1Array.Array;
 
 import java.util.Scanner;
 

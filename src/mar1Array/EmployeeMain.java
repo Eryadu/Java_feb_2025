@@ -1,4 +1,4 @@
-package mar1;
+package mar1Array;
 
 public class EmployeeMain {
     public static void main(String[] args) {

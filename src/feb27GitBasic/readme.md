@@ -85,3 +85,11 @@ This means you'll need to explicitly specify origin main in future git push or g
 -- git rm --cached .-r // for all files
 
 -- git commit -amend-m "added more data" --> to mke change to current log message
+
+## How to switch to new Repository
+
+1. git remote -v // to check present repository
+2. git remote set-url origin https://github.com/Eryadu/GitAssignment.git // to switch to new repository
+
+git remote add -f repo-b git@github.com:vaibhavmule/repo-b.git
+https://github.com/Eryadu/GitAssignment.git

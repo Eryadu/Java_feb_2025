@@ -1,4 +1,4 @@
-package feb18;
+package feb18Loops;
 
 import java.util.Scanner;
 

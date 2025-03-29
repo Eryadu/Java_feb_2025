@@ -59,21 +59,23 @@ ELASTIC COMPUTE CLOUD
 
 ## Linux commands
 
-touch
-ls
+touch file_name   --> to create file
+ls --> check list of file
 ls -l , ls -lrt , ls - lt, ls -lr
 -l   ---- long list
 -r   -- reverse sort order
 -t   -- based on time
 
 
--rw-r--r--.   - Permissions  and file type // - means its file
-1               Memory Block
-ec2-user      - owner name  
-ec2-user      - owner group name
-0             - Size of file in Bytes  
-Feb 14 02:07  - Date and time
-file2****     - Name of the file
+## Example -rw-r--r--@ 1 yadavgupta  staff  0 Mar 28 22:09 index.html
+
+-rw-r--r--.   --> Permissions on file
+1             -->  Memory Block
+yadavgupta    --> owner name  
+staff         --> owner group name
+0             -->  Size of file in Bytes  
+Mar 28 22:09  --> Date and time
+index.html    -->  Name of the file
 
 
 d - directory  - same as folder in windows
@@ -89,26 +91,24 @@ to open a file
 vi file_name
 -> press 'i' to go to insert mode
 Type something...
-esc
+esc --> to exit from editing mode
 
-:wq - save and exit   , :x
+:wq , :x -->save and exit   
 :q - to quit if no content
-:q! - force quit
+:q! - force quit without save
 :w - save the file
 
+cat file_name --> to check the content of file without opening
+cp file_name new_file_name -->copy
+mv file_name --> rename
+rm file_name --> to delete file
+rmdir dir_name --> to delete the directory
+rm -r dir_name --> to delete directory with files inside
 
-cp file_name newfile
-
-cp - copy
-mv - rename
-rm - to delete
-rmdir - to delete the directory
-rm -r - to delete directory with files inside
-
-mkdir - to create a new directory
-cd - change directory , to go inside the dir
-cd .. -- go back to previous dir
-whatis filename --- to get the description of file
-alias anyname=command_for_which --- use to create alias for long command
-unalias anyname ---anyname you gave to alias
+mkdir dir_name   --> to create a new directory
+cd dir_name      --> change directory , to go inside the dir
+cd ..            --> go back to previous dir
+whatis filename  --> to get the description of file
+alias anyname=command_for_which --> use to create alias for long command
+unalias anyname --> anyname you gave to alias
 
