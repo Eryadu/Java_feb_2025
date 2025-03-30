@@ -46,3 +46,38 @@ Private	           Yes	       No	        No	      No
 Protected	       Yes	       Yes	        Yes    	  No
 Public	           Yes	       Yes	        Yes	      Yes
 Default	           Yes	       No	        Yes	      No
+
+Key Differences:
+
+## Accessibility:
+private: Only within the same class.
+default (no modifier): Within the same package.
+protected: Within the same package + subclasses (even in different packages).
+public: Accessible everywhere.
+static: Not an access modifier; defines class-level members (works with other access modifiers).
+
+## Instance Requirement:
+Non-static members require an object instance.
+static members belong to the class and can be accessed without an instance.
+
+## Combination with static:
+static can be combined with private, public, protected, or default.
+Example: public static int count; (class-level, accessible everywhere).
+
+Example:
+
+public class Example {
+private int a = 1;         // Only accessible in this class
+int b = 2;                 // Default (package-private)
+protected int c = 3;       // Accessible in package + subclasses
+public int d = 4;          // Accessible everywhere
+public static int e = 5;   // Class-level, accessible everywhere
+}
+
+## When to Use Which:
+
+Use private for encapsulation (data hiding).
+Use default for package-internal access.
+Use protected for controlled inheritance.
+Use public for API methods/constants.
+Use static for class-level properties/methods (e.g., utility methods).
