@@ -1,6 +1,6 @@
 package practice;
 
-import mar29.ImmutableClass;
+import mar29GenericWrapperImmutable.ImmutableClass;
 
 import java.util.Date;
 

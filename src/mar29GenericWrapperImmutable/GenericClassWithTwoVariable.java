@@ -1,4 +1,4 @@
-package mar29;
+package mar29GenericWrapperImmutable;
 // generic class represent by angular brackets <> with any type of datatypes
 // generic class with two data types
 public class GenericClassWithTwoVariable<C1, C2> {
