@@ -54,3 +54,6 @@ We use linkedList, cause just change 1 or 2 reference rather shifting million el
 0 1 2.... 1M
 
 Search /read operations 10 - 1M - ArrayList manipulation/ insertions or deletions - LinkedList
+
+// add another filed as salary and find the employee name with highest salary.
+// use java 8 streams api to find the highest salary. 
