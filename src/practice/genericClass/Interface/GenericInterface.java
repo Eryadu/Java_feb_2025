@@ -1,4 +1,4 @@
-package practice.GenericClass.Interface;
+package practice.genericClass.Interface;
 
 public interface GenericInterface <T>{
     void show(T name);

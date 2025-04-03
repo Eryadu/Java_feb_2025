@@ -20,6 +20,7 @@ boolean         -- Boolean
 
 ## Immutable class
 Can't modify
+All Wrapper classes are immutable.
 
 -- all the field should be final and private
 -- class should be final
@@ -89,7 +90,7 @@ Gradle?
 
 ## File Handling
 
-working with files and adding/removing , manupulating files
+working with files and adding/removing , mainupulating files
 FileWriter class
 try with resources // no need to close the resource
 try without resource // need to close every time 

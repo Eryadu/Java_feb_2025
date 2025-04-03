@@ -1,4 +1,4 @@
-package practice.GenericClass;
+package practice.genericClass;
 
 // Bounded Generic Class , only accept String
 public class BoundedGeneric <T extends String>{

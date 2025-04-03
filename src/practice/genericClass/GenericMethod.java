@@ -1,4 +1,4 @@
-package practice.GenericClass;
+package practice.genericClass;
 
 import java.util.Arrays;
 

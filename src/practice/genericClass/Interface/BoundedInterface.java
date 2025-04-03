@@ -1,4 +1,4 @@
-package practice.GenericClass.Interface;
+package practice.genericClass.Interface;
 
 
 interface Bounded <T extends Number>{

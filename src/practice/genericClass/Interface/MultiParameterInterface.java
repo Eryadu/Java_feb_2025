@@ -1,4 +1,4 @@
-package practice.GenericClass.Interface;
+package practice.genericClass.Interface;
 
 interface MutliPara <K,V>{
         K getKey();

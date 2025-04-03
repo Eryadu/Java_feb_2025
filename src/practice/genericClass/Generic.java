@@ -1,4 +1,4 @@
-package practice.GenericClass;
+package practice.genericClass;
 
 public class Generic<T,K> {
    private T name;

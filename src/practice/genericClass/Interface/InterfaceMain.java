@@ -1,4 +1,4 @@
-package practice.GenericClass.Interface;
+package practice.genericClass.Interface;
 
 public class InterfaceMain implements GenericInterface <String> {
     @Override
