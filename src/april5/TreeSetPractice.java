@@ -24,20 +24,20 @@ public class TreeSetPractice {
         System.out.println("HashCode is : " + treeSet.hashCode());
 
         Object[] obj = treeSet.toArray();
-        for (Object o : obj)
-        {
+        for (Object o : obj) {
             System.out.print("" + o + "");
         }
 
 
-        String[] str = {"ABC" , "CDE", "DEF"};
+        String[] str = {"ABC", "CDE", "DEF"};
         Set<String> arr = new TreeSet<>(Arrays.asList(str));
         System.out.println("Convert Array to TreeSet : " + arr);
 
         String[] str1 = treeSet.toArray(new String[0]);
-        for(String s : str1){
+        for (String s : str1) {
             System.out.print(" " + s + " ");
         }
+
 
 
     }

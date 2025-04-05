@@ -1,10 +1,7 @@
 package april5;
 
 import java.sql.SQLOutput;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 public class SetPractice {
     public static void main(String[] args) {
@@ -54,9 +51,19 @@ public class SetPractice {
 
       // Problem to solve to remove duplicate elements from Array
 
+        //Method 1
+
        Integer[] arr1 = {10,23,34,54,65,43,43,34,23,22,35,65,76,65,87};
         Set<Integer> hashSet4 = new HashSet<>(Arrays.asList(arr1));
         System.out.println("Array with unique elements : " + hashSet4);
+
+       // We can convert Array to List, then pass the list to perform different method
+        // Cause Array is not a collection, so to use the method of collection we first convert Array to List.
+
+        //Method 2
+       List<Integer> list = Arrays.asList(10,23,34,54,65,43,43,34,23,22,35,65,76,65,87);
+        Set<Integer> hashSet5 = new HashSet<>(list);
+        System.out.println("Array with unique elements : " + hashSet5);
 
 
         //Set<Integer> arr1 = new HashSet<>();

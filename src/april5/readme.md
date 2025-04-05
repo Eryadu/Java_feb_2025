@@ -19,6 +19,9 @@ Hashset   TreeSet   Linked hashset
 
 Hashset is implementation of Set
 
+
+Explore Set ??
+
 ## Difference between Hashset, TreeSet, LinkedHashSet
 
 ## HashSet
@@ -26,7 +29,18 @@ Hashset is implementation of Set
 
 ## TreeSet
 : Natural Sorting order
+: no null is allowed
 
 ## LinkedHashset
 : Order is maintained
 insertion order
+
+// HashSet  --- Hashmap ---- LinkedList of Arraylist
+
+These are Utilities classes.
+## Arrays ?? class explore
+## Collections explore ??
+
+
+## Iterator
+## ListIterator
