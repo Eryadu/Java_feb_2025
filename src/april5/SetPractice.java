@@ -49,8 +49,16 @@ public class SetPractice {
         for(Integer i : arr){
             System.out.print(" " + i + " ");
         }
+        System.out.println();
 
-       // int[] arr1 = {10,23,34,54,65,43,43,34,23,22,35,65,76,65,87};
+
+      // Problem to solve to remove duplicate elements from Array
+
+       Integer[] arr1 = {10,23,34,54,65,43,43,34,23,22,35,65,76,65,87};
+        Set<Integer> hashSet4 = new HashSet<>(Arrays.asList(arr1));
+        System.out.println("Array with unique elements : " + hashSet4);
+
+
         //Set<Integer> arr1 = new HashSet<>();
         // by add all elements and print set it automatically remove duplicates
 
