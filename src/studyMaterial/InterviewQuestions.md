@@ -9,3 +9,5 @@
 9. How to make immutable class?
 10. Internal implementation of hashmap
 11. Collection - Most important (60% interview)
+12. Put and Patch difference
+13. HTPPs response Code (https://www.w3schools.com/tags/ref_httpmessages.asp)

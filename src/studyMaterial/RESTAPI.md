@@ -3,6 +3,9 @@
    (data or services) on a server using standard HTTP methods (GET, POST, PUT, DELETE, etc.). REST APIs are simple, 
    scalable, and widely adopted for building web services.
 
+## API two set of systems
+## Specially its built on HTML method
+
 ## Key Principles of REST APIs:
 1. Stateless:Each request from the client to the server must contain all the information needed to understand and process 
    the request.

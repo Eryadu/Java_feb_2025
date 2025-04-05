@@ -20,13 +20,25 @@ build on the Top of HTTP
 6. Layered System
 7. Uniform System
 
+## Put and PATCH are for update
+Put -- you have to update the whole resource
+{
+"Name" : "yadav"
+"Email ID" : "yad@gmail.com"
+"Contact" : "1234"
+}
+
+PATCH -- to update one part
+{
+"Name" : "Yadav"
+}
 
 Put - update a resource, complete object should be passed like  name email phone
 vs
 PATCH - just pass the part like email
 
-Base URL --- https://reqres.in 
-End request --- /api/users/2 (GET, POST, PATCH, DELETE,PUT)
+## How to break URL 
+1. Base URL --- https://reqres.in 
+2. End request --- /api/users/2 (GET, POST, PATCH, DELETE,PUT)
+3. Query Parameter
 
-openweathermap API website to practice
-dummy API

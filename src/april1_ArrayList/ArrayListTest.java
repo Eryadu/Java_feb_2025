@@ -26,7 +26,7 @@ public class ArrayListTest {
 
 
         // to convert list to array
-        Object[] objects = list.toArray();
+        Object[] objects = list.toArray(); // ArrayList is backed by Object array
         for (Object e : objects)
         {
            System.out.println(e);

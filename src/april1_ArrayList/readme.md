@@ -23,7 +23,8 @@ Its dynamic in nature
 n + n/2 + 1
 new array of size 16 is created.
 
-if we know the size = array, if we don't know the size , it's going to grow dynamically = arraylist
+if we know the size = array, 
+if we don't know the size , it's going to grow dynamically = arraylist
 
      */
 // Java 8
@@ -49,7 +50,7 @@ LinkedList
 
 -- for insertion linkedList ArrayList
 
-if we have to add element at first/first occurence in list which one we should use arraylist or linkedlist - 1M elements elements
+if we have to add element at first/first occurrence in list which one we should use arraylist or linked-list - 1M elements 
 We use linkedList, cause just change 1 or 2 reference rather shifting million elements to their right in Array
 0 1 2.... 1M
 

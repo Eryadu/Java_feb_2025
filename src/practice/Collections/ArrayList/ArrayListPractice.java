@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.ArrayList;
 
 public class ArrayListPractice {
+
     public static void main(String[] args) {
         List<Integer> list = new ArrayList<>();
         list.add(10);
@@ -90,6 +91,13 @@ public class ArrayListPractice {
         System.out.println("List5 is : " + list5);
         list5.replaceAll(String :: toUpperCase );
         System.out.println("List5 after replaceall is : " + list5);
+
+      // create Array of other (existing) collection size
+
+        ArrayList<Integer> list6 = new ArrayList<>(list);
+        System.out.println("Size of Existing Array is  : " + list.size());
+        System.out.println("Size of new Array of existing size is  : " + list6.size());
+
 
 
     }

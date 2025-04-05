@@ -73,7 +73,7 @@ list.forEach(System.out::println);
 
 5. Important Methods
 Method	            Description	                Time Complexity
-add(E e)	        Appends element	            Amortized O(1)
+add(E e)	        Appends element	            Amortized O(1) // E is generic type i.e. Integer, String
 add(index, E e)	    Inserts at index	            O(n)
 get(index)	        Returns element	                O(1)
 set(index, E e) 	Replaces element	            O(1)
