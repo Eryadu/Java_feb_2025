@@ -2,7 +2,7 @@ package mar22Exceptionsthrow.BankDemo;
 
 public class BankMember {
     double accountBalance;
-    int accountNumber;
+    private String accountNumber;
 
     public BankMember() {
     }
@@ -11,7 +11,7 @@ public class BankMember {
         this.accountBalance = bankBalance;
     }
 
-    public BankMember(double bankBalance, int accountNumber) {
+    public BankMember(double bankBalance, String accountNumber) {
         this.accountBalance = bankBalance;
         this.accountNumber = accountNumber;
     }
@@ -22,14 +22,14 @@ public class BankMember {
 
     public void setBankBalance(double bankBalance) {
         this.bankBalance = bankBalance;
+    }*/
+
+    public String getAccountNumber() { // You can just check account number.
+        return accountNumber;
     }
 
-    public double getAccountNumber() { // You can just check account number.
-        return accountNumber;
-    }*/
-
-    /*public void setAccountNumber(double accountNumber) {
+    public void setAccountNumber(String accountNumber) {
         this.accountNumber = accountNumber;
-    }*/
+    }
 }
 
