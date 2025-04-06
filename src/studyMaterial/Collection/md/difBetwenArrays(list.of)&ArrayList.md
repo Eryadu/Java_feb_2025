@@ -5,7 +5,7 @@
    Example –
 
         String[] array = {"apple", "banana", "cherry"};
-        List<String> list = Arrays.asList(array);
+        List<String> list = Arrays.asList(array); // Converting to asList mean convert to collections
         list.set(0, "orange"); // Changes "apple" to "orange"
         List.of is immutable, meaning you cannot add, remove or modify elements in the list.
     If you try to modify the list, you will get an UnsupportedOperationException

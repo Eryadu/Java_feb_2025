@@ -1,10 +1,14 @@
 
-## ArrayList is one of Java's most commonly used collection classes, providing a resizable array implementation of the 
-   List interface.
+## ArrayList is one of Java's most commonly used collection classes, or it is a data Structure, providing a resizable  
+   array implementation of the List interface.
+##  ArrayList is the most widely used implementation of the List interface. Some of the salient features of an ArrayList are:
+   1. Elements are stored in the order of insertion.
+   2. It allows the storage of duplicate elements.
+   3.  ArrayList also supports null elements.
 
 1. Key Features
 
-✔ Dynamic resizing - Grows automatically when full
+✔ Dynamic resizing   - Grows automatically when full
 ✔ Fast random access - O(1) time for get(index) and set(index)
 ✔ Ordered collection - Maintains insertion order
 ✔ Permits duplicates and nulls
@@ -12,9 +16,16 @@
 
 2. Internal Implementation
 
+## An ArrayList stores data in a resizable array. Before Java 8, when an ArrayList was created, an array of default size
+   10 was created internally. Now, when an ArrayList is created, an array of size zero is created. Only when the first 
+   element is inserted does the array size change to ten. This is called lazy initialization, and it saves a lot of memory.
+   Before adding an element in ArrayList, its capacity is checked. If the internal array is full, then a new array of size
+   (n + n/2 +1)  is created (e.g., if the capacity is ten, then a new array of size 16 will be created). The elements from
+   the old array will be copied to the new array. This increases the capacity of an ArrayList, which is a time-consuming process.
+
 Backed by an Object[] array
 Default initial capacity: 10
-Grows by 50% when full (newCapacity = oldCapacity + (oldCapacity >> 1))
+Grows by 50% when full (newCapacity = oldCapacity + (oldCapacity >> 1)) using formula n+n/2+1
 // Simplified internal array structure
 transient Object[] elementData; // Where elements are stored
 private int size; // Current number of elements
@@ -96,6 +107,8 @@ CopyOnWriteArrayList for thread safety
 String[] array = list.toArray(new String[0]);
 
 // Array to ArrayList
+## Note : As Array is not a collection so, to convert Array to Arraylist, first convert Array to List (Collections), then 
+   pass that List to anywhere for conversion. Ex. Between Collections
 List<String> list = Arrays.asList(array); // Fixed-size
 List<String> realList = new ArrayList<>(Arrays.asList(array)); // Mutable
 
@@ -175,3 +188,17 @@ For large datasets with frequent modifications, consider:
 -- CopyOnWriteArrayList for concurrent read-heavy cases
 
 ## ArrayList remains the default choice for most Java developers when a resizable array is needed.
+
+-- How the ArrayList works
+   The ArrayList class has a regular array inside it. When an element is added, it is placed into the array.
+   If the array is not big enough, a new, larger array is created to replace the old one and the old one is removed.
+
+-- How the LinkedList works
+   The LinkedList stores its items in "containers." The list has a link to the first container and each container has a
+   link to the next container in the list. To add an element to the list, the element is placed into a new container and 
+   that container is linked to one of the other containers in the list.
+
+## Java Sort a List
+   ArrayList and LinkedList, which are found in the java.util package. Another useful class in the java.util package is 
+   the Collections class, which include the sort() method for sorting lists alphabetically or numerically.
+   i.e. Collections.sort(ArrayList/LinkedList)

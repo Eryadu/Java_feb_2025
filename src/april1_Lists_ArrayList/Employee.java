@@ -1,4 +1,4 @@
-package april1_ArrayList;
+package april1_Lists_ArrayList;
 
 public class Employee {
     String empName;

@@ -1,5 +1,5 @@
 
-## LinkedList is a fundamental Java collection that implements both the List and Deque interfaces, providing a 
+## LinkedList is a fundamental Java collection /or data Structure that implements both the List and Deque interfaces, providing a 
    doubly-linked list data structure. Unlike ArrayList, LinkedList excels at frequent insertions/deletions but has slower
    random access.
 
