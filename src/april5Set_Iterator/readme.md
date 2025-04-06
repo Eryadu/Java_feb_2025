@@ -44,3 +44,31 @@ These are Utilities classes.
 
 ## Iterator
 ## ListIterator
+
+/*
+ForLoops
+Iterator
+Create ListIterator
+Use iterator for HashSet
+
+
+        Smallest and largest number in arraylist
+        Numbers greater than 10 and less than 10
+
+         */
+
+
+Problem 
+
+take a big string and remove the duplicate elements
+
+
+
+
+
+
+
+
+
+
+

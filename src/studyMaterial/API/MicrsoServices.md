@@ -1,4 +1,7 @@
-Microservices Architecture is a software design approach where an application is built as a collection of small, independent, and loosely coupled services. Each service is responsible for a specific business function and can be developed, deployed, and scaled independently. These services communicate with each other through well-defined APIs (Application Programming Interfaces), typically over a network.
+## Microservices Architecture is a software design approach where an application is built as a collection of small, 
+   independent, and loosely coupled services. Each service is responsible for a specific business function and can be 
+   developed, deployed, and scaled independently. These services communicate with each other through well-defined 
+   APIs (Application Programming Interfaces), typically over a network.
 
 ## Key Characteristics of Microservices Architecture:
 1. Decentralized and Independent Services:Each microservice is a self-contained unit with its own codebase, database, 
@@ -40,7 +43,7 @@ An API Gateway is often used to manage external communication with the services,
 2. Scalability:Individual services can be scaled based on demand, improving resource efficiency.
 3. Fault Isolation:Failures in one service do not affect the entire system.
 4. Technology Flexibility:Different services can use different technologies best suited for their tasks.
-5. Easier MaintenanceSmaller codebases are easier to understand, test, and maintain.
+5. Easier Maintenance: Smaller codebases are easier to understand, test, and maintain.
 6. Continuous Deployment:Independent deployment of services allows for faster and more frequent updates.
 
 ## Challenges of Microservices Architecture:
@@ -56,7 +59,7 @@ An API Gateway is often used to manage external communication with the services,
 5. Data Management:
    Decentralized data storage can lead to data duplication and consistency issues.
 
--- When to Use Microservices Architecture:
+## When to Use Microservices Architecture:
 -- Large, complex applications with multiple teams.
 -- Applications requiring high scalability and fault tolerance.
 -- Systems where different components have different technology requirements.
@@ -64,12 +67,13 @@ An API Gateway is often used to manage external communication with the services,
 
 
 Aspect	                    Monolithic Architecture	                        Microservices Architecture
+   |                                |                                                  |
 Structure	                Single, unified codebase                       Multiple, independent services.
 Scalability	                    Scales as a whole.	                       Individual services can be scaled.
 Deployment	            Entire application is deployed at once.	        Services can be deployed independently.
 Technology	                Limited to a single tech stack.	            Polyglot (multiple tech stacks allowed).
 Fault Tolerance	        Failure in one part can crash the whole app.	Failures are isolated to specific services.
-Complexity	                Simpler to develop and deploy initially.	  More complex to manage and orchestrate.
+Complexity	            Simpler to develop and deploy initially.	     More complex to manage and orchestrate.
 
 -- In summary, microservices architecture is a modern approach to building scalable, flexible, and resilient applications 
    by breaking them into smaller, independent services. It’s particularly useful for large, complex systems but requires 

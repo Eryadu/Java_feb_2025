@@ -2,12 +2,15 @@
    applications to communicate with each other. APIs define how software components should interact, making it easier for 
    developers to integrate and use functionalities from other systems or services.
 
+## API is set of two system
+
 ## Key Concepts of APIs:
 
 1. Interface: An API acts as an interface between two systems, allowing them to exchange data and functionality.
 2. Endpoints: APIs expose specific endpoints (URLs) that can be accessed to perform certain actions or retrieve data.
 3. Requests and Responses: APIs typically work on a request-response model. A client sends a request to the API, and the 
    server sends back a response.
+
 ## Methods: APIs use standard HTTP methods like:
 -- GET: Retrieve data.
 -- POST: Send data to create or update resources.
@@ -31,8 +34,8 @@
 Example:
 A weather service might provide an API that allows developers to retrieve weather data by sending a request to an endpoint like:
 GET https://api.weather.com/v1/forecast?location=NewYork
-The response might look like this in JSON:
 
+The response might look like this in JSON:
 {
 "location": "New York",
 "temperature": "22°C",

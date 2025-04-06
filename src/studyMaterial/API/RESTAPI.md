@@ -3,20 +3,23 @@
    (data or services) on a server using standard HTTP methods (GET, POST, PUT, DELETE, etc.). REST APIs are simple, 
    scalable, and widely adopted for building web services.
 
-## API two set of systems
-## Specially its built on HTML method
+## API basically a two set of systems
+## Def : REST API Specially its built on HTML method like (GET, POST, PUT, DELETE, etc.) and it is based on client-server 
+   communication model, where clients interact with resources(data or services) on a server using standard HTTP methods
+   Example of API. Google Map api, payment system , weather map, Yahoo api
+   sky-scanner , online e-commerce app ,zomato, uber, skip-the-dishes.
 
 ## Key Principles of REST APIs:
 1. Stateless:Each request from the client to the server must contain all the information needed to understand and process 
    the request.
-   --The server does not store any client context between requests.
+   --The server does not store any client context between requests (Client-Server).
 2. Client-Server Architecture:The client and server are separate entities that communicate over HTTP.
    -- The client is responsible for the user interface, while the server handles data storage and business logic.
 3. Uniform Interface:REST APIs use a consistent and standardized way to interact with resources.
    This includes:
    -- Resource identification (via URIs/URLs).
    -- Resource manipulation (via HTTP methods).
-   -- Self-descriptive messages (via HTTP headers and status codes).
+   -- Self-descriptive messages (via HTTP headers and status codes/ HTTP Response Code).
 4. Resource-Based:Everything in a REST API is treated as a resource (e.g., users, products, orders).
    Resources are identified by URIs (Uniform Resource Identifiers), such as:
    https://api.example.com/users
@@ -33,10 +36,17 @@
 7. Representation:Resources can be represented in different formats, such as JSON, XML, or HTML.
    JSON (JavaScript Object Notation) is the most commonly used format due to its simplicity and readability.
 
+## Breakage of URL
+## https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}
+
+-- https://api.openweathermap.org          - Base URL
+-- data/2.5/weather                        - ENDPOINT (Resource)
+-- lat={lat}&lon={lon}&appid={API key}     - Query Parameter
+
 ## How REST APIs Work:
    A client sends an HTTP request to a specific URL (endpoint) on the server.
    The server processes the request and performs the required action (e.g., retrieving data, updating a resource).
-   The server sends back an HTTP response, typically containing:
+   The server sends back an HTTP response, typically containing HTTP Response Code:
    A status code (e.g., 200 for success, 404 for not found).
    Data in a specific format (e.g., JSON).
 
@@ -50,13 +60,15 @@ DELETE /users/{id} → Delete a user.
 
 ## Key Components of REST APIs:
 -- Endpoints:URLs that represent resources (e.g., /users, /products).
--- HTTP Methods:Define the action to be performed on the resource.
+-- HTTP Methods (GET, POST, PUT, PATCH):Define the action to be performed on the resource.
 -- Headers:Provide metadata about the request or response (e.g., Content-Type: application/json).
 -- Status Codes:Indicate the result of the request:
    2xx: Success (e.g., 200 OK, 201 Created).
    3xx: Redirection (e.g., 301 Moved Permanently).
    4xx: Client errors (e.g., 400 Bad Request, 404 Not Found).
    5xx: Server errors (e.g., 500 Internal Server Error).
+## https://www.restapitutorial.com/introduction/httpmethods // for HTTP Response Code
+   https://www.w3schools.com/tags/ref_httpmessages.asp // for HTTP Response Code
 -- Request/Response Body:Contains the data being sent or received (usually in JSON format).
 
 ## Benefits of REST APIs:
@@ -82,12 +94,12 @@ Use Case	    General-purpose web services	Enterprise-level services	  Complex qu
 
 ## Tools for Working with REST APIs:
 -- Testing Tools:
-   Postman, Insomnia, cURL.
+   Postman, Insomnia, cURL, Bruno.
 -- Documentation Tools:
    Swagger/OpenAPI, API Blueprint.
 -- Frameworks:
    Express.js (Node.js), Django REST Framework (Python), Spring Boot (Java).
 
 ## In summary, REST APIs are a simple, scalable, and widely used way to build web services. They are ideal for modern 
-   applications due to their flexibility, statelessness, and ease of use. If you’re building or consuming REST APIs, 
-   understanding their principles and best practices is essential! 
+   applications due to their flexibility, statelessness, and ease of use.
+   
