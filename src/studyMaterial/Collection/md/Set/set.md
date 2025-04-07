@@ -2,6 +2,9 @@
    The Set interface in Java is part of the Java Collections Framework (JCF) and represents a collection that does not 
    allow duplicate elements. It models the mathematical set abstraction and extends the Collection interface.
 
+## The Set interface contains only methods inherited from Collection and adds the restriction that duplicate elements 
+   are prohibited.
+
 ## Key Features of Set
 
 ✅ No Duplicate Elements – Ensures uniqueness (only one null element allowed in most implementations).
