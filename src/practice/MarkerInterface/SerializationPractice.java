@@ -1,4 +1,4 @@
-package practice;
+package practice.MarkerInterface;
 
 
 import java.io.*;
@@ -7,14 +7,14 @@ import java.io.*;
 class Person implements Serializable {
     private String Name;
     private int age;
+    transient private String password;
 
-    // @Constructor
-    public Person(String name, int age) {
+    public Person(String name, int age, String password) {
         Name = name;
         this.age = age;
+        this.password = password;
     }
 
-    // @Getter Setter
     public String getName() {
         return Name;
     }
@@ -30,11 +30,29 @@ class Person implements Serializable {
     public void setAge(int age) {
         this.age = age;
     }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "Name='" + Name + '\'' +
+                ", age=" + age +
+                ", password='" + password + '\'' +
+                '}';
+    }
 }
+
 
 public class SerializationPractice{
     public static void main(String[] args) {
-        Person person = new Person("Yad", 21);
+        Person person = new Person("Yad", 21, "ABC");
 
         try (
                 // Create a file to store serialized object
@@ -47,10 +65,10 @@ public class SerializationPractice{
             out.writeObject(person);
             System.out.println("Object Serialized to person.ser");
             }
-
-         catch (Exception e) {
+        catch (Exception e) {
             throw new RuntimeException(e);
         }
+
 
     }
 }
