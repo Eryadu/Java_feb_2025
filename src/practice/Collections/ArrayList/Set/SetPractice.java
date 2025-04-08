@@ -1,6 +1,9 @@
-package april5Set_Iterator;
+package practice.Collections.ArrayList.Set;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
 public class SetPractice {
     public static void main(String[] args) {
@@ -63,10 +66,6 @@ public class SetPractice {
        List<Integer> list = Arrays.asList(10,23,34,54,65,43,43,34,23,22,35,65,76,65,87);
         Set<Integer> hashSet5 = new HashSet<>(list);
         System.out.println("Array with unique elements : " + hashSet5);
-
-        List<String> list2 = Arrays.asList("Hello world there are many hello hello hello world are there");
-        Set<String> hashSet6 = new HashSet<>(list2);
-        System.out.println("Array with unique elements : " + hashSet6);
 
 
         //Set<Integer> arr1 = new HashSet<>();
