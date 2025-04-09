@@ -11,3 +11,4 @@
 11. Collection - Most important (60% interview)
 12. Put and Patch difference
 13. HTPPs response Code (https://www.w3schools.com/tags/ref_httpmessages.asp)
+14. Difference between Comparator and Comparable

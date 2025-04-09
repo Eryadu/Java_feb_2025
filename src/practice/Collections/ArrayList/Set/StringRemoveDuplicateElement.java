@@ -40,7 +40,6 @@ public class StringRemoveDuplicateElement {
 
         // Method 2
         System.out.println();
-        System.out.println();
         System.out.println("Method 2 is : ");
         System.out.println();
         String str = "The Fibonacci each sequence is a mathematical sequence in The Fibonacci each which each number is the sum of ";
