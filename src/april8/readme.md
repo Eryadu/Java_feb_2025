@@ -18,4 +18,15 @@ In Comparator, without changing main class code we can just create new comparato
 FunctionalInterface() ?
 have one abstract method and all other default method
 
+## HashMap ??
+## TreeMap??
+## LinkedListMap??
+Concurrent HashMap
+IdentityHashMap
+EnumMap
+
+Equal and hashcode
+if two objects are equal, they should have same hashcode
+if two objects have same hashcode, they may not be equal .
+
 
