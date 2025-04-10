@@ -4,6 +4,8 @@
 -- Natural ordering (using Comparable), or
 -- Custom ordering (using a Comparator).
 
+## In order to create a tree set, we must import the java.util.TreeSet package first.
+
 ## Key Features of TreeSet
 
 ✅ Elements are Sorted – Always maintains ascending order (or custom order).
