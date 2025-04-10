@@ -1,4 +1,4 @@
-package practice.Collections.ArrayList;
+package practice.Collections.ArrayList.LinkedList;
 
 public class Product {
         String pName;

@@ -1,4 +1,6 @@
- ## Java Iterator
+## refer this https://www.programiz.com/java-programming/iterator
+
+## Java Iterator
     The Iterator in Java is an interface that provides a way to traverse through a collection of objects, such as lists
     or sets, one element at a time. It is part of the Java Collections Framework and is found in the java.util package. 
     The Iterator interface is used to access elements of a collection sequentially without exposing the underlying 
