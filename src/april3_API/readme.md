@@ -67,7 +67,8 @@ openweather map api ?
 
 Authentication API Key : authorization : 10753073fb906174c195f1663a489d81
 
-Latitude and longitude
+## Latitude and longitude
+check google to access lat and lon of any location
 
 400 Bad Request : 401 : Unauthorized Error 404
 
@@ -78,6 +79,8 @@ access token : 99f5dada3a84e90ce0e7497ee8ecd6229877e091657d08f3ae17897975f17903
 response :
 
 { "created": true, "orderId": "LAKehhP_ltE2fKkJ5RpVf" }
+
+vault key b99312882650f058b2de14e5063341caeb8512c2d4ad7f444c0b311f8c30ab2b
 
 
 

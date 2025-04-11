@@ -1,3 +1,5 @@
+## Refer this first https://www.programiz.com/java-programming/collections
+
 ## Collection Classes in Java
    Java provides a comprehensive framework of collection classes as part of the Java Collections Framework (JCF).
    These classes are used to store and manipulate groups of objects and are part of the java.util package.

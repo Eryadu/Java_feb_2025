@@ -4,8 +4,9 @@
    scalable, and widely adopted for building web services.
 
 ## API basically a two set of systems
-## Def : REST API Specially its built on HTML method like (GET, POST, PUT, DELETE, etc.) and it is based on client-server 
-   communication model, where clients interact with resources(data or services) on a server using standard HTTP methods
+## Def : REST API is a widely used architectural style for designing web services, Specially its built on HTML method like 
+   (GET, POST, PUT, DELETE, etc.) and it is based on client-server communication model, where clients interact with 
+   resources(data or services) on a server using standard HTTP methods
    Example of API. Google Map api, payment system , weather map, Yahoo api
    sky-scanner , online e-commerce app ,zomato, uber, skip-the-dishes.
 
