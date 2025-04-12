@@ -1,4 +1,4 @@
-package practice.MarkerInterface;
+package practice.markerInterface;
 
 
 import java.io.*;

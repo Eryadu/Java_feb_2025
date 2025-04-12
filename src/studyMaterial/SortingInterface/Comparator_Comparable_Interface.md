@@ -95,3 +95,8 @@ return this.year - other.year; // other way to define
 -- It is easier to use the Comparable interface when possible, but the Comparator interface is more powerful because 
    it allows you to sort any kind of object even if you cannot change its code.
 
+Comparator is better than Comparable, don't need to change main class code if add more functionality (SOLID Principle) i.e. 
+compare based on other elements. In Comparable, do need to change main code everytime.
+
+## https://www.w3schools.com/java/java_advanced_sorting.asp
+

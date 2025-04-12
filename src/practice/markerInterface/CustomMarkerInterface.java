@@ -1,4 +1,4 @@
-package practice.MarkerInterface;
+package practice.markerInterface;
 
 // Marker interface without any method nd field
 interface logging{
