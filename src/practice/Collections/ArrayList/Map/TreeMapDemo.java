@@ -1,5 +1,6 @@
 package practice.Collections.ArrayList.Map;
 
+import java.util.Comparator;
 import java.util.TreeMap;
 
 public class TreeMapDemo {
@@ -112,6 +113,22 @@ public class TreeMapDemo {
 
         // Using subMap() with specified booleanValue
         System.out.println("With boolean value: " + numbers.subMap("Fourth", false, "Third", true));
+
+        // Custom Sorting order
+         class ComparatorDemo implements Comparator<String>{
+             @Override
+             public int compare(String o1, String o2) {
+                 return o1.compareTo(o2);
+             }
+         }
+
+        TreeMap<String, Integer> evenNumbers1 = new TreeMap<>(new ComparatorDemo());
+        evenNumbers1.put("BTwo", 2);
+        evenNumbers1.put("AOne", 1);
+        evenNumbers1.put("DFive", 5);
+        evenNumbers1.put("CFour", 4);
+        System.out.println("Custom Sorted TreeMap is : " + evenNumbers1);
+
 
     }
 }

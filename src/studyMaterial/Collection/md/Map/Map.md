@@ -9,3 +9,9 @@ https://www.programiz.com/java-programming/linkedhashmap
 
 // For SortedMap Interface
 https://www.programiz.com/java-programming/sortedmap
+
+// For NavigableMap Interface
+https://www.programiz.com/java-programming/navigablemap
+
+// For TreeMap
+https://www.programiz.com/java-programming/treemap
