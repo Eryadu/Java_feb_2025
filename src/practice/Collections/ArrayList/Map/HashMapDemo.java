@@ -1,6 +1,9 @@
 package practice.Collections.ArrayList.Map;
 
 import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
+import java.util.TreeMap;
 
 public class HashMapDemo {
     public static void main(String[] args) {
@@ -36,6 +39,43 @@ public class HashMapDemo {
 
         HashMap<Integer, String> cloneLanguages = (HashMap<Integer, String>)languages.clone();
         System.out.println("Clone is : " + cloneLanguages);
+
+        // Iterate through Elements of map
+
+        for(Integer k : languages.keySet()){
+            System.out.println("KeySet is : " + k);
+        }
+
+        for (String s : languages.values()){
+            System.out.println("Values are : " + s);
+        }
+
+        for(Map.Entry<Integer, String> entry : languages.entrySet()){
+            System.out.print(entry);
+            System.out.print(",");
+        }
+
+
+        // Print EntrySet
+        System.out.println();
+        Set<Map.Entry<Integer,String> > entrySet = languages.entrySet();
+        System.out.println("Entry Set is : " + entrySet);
+
+        /*Note that we have used the Map.Entry in the above example. It is the nested class of the Map interface that
+          returns a view (elements) of the map.We first need to import the java.util.Map.Entry package in order to use
+          this class.This nested class returns a view (elements) of the map.*/
+
+        // Creating HashMap from Other Maps
+        // create a treemap
+        TreeMap<String, Integer> evenNumbers = new TreeMap<>();
+        evenNumbers.put("Two", 2);
+        evenNumbers.put("Four", 4);
+        System.out.println("TreeMap: " + evenNumbers);
+
+        // create hashmap from the treemap
+        HashMap<String, Integer> numbers = new HashMap<>(evenNumbers);
+        numbers.put("Three", 3);
+        System.out.println("HashMap: " + numbers);
 
     }
 }
