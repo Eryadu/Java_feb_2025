@@ -15,3 +15,9 @@ https://www.programiz.com/java-programming/navigablemap
 
 // For TreeMap
 https://www.programiz.com/java-programming/treemap
+
+// For ConcurrentMap
+https://www.programiz.com/java-programming/concurrentmap
+
+// For ConcurrentHashMap
+https://www.programiz.com/java-programming/concurrenthashmap

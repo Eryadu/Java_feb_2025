@@ -13,6 +13,7 @@ public class SetPractice {
         hashSet.add(30);
         hashSet.add(40);
         System.out.println(hashSet);
+        System.out.println(hashSet.add(40)); // When try to insert duplicate value , it returned boolean 'False'.
 
         Set<Integer> hashSet2 = new HashSet<>();
         hashSet2.addAll(hashSet);

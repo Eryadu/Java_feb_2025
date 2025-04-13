@@ -7,6 +7,29 @@
 ## The Set interface contains only methods inherited from Collection and adds the restriction that duplicate elements 
    are prohibited.
 
+## Common Constructor for all Set interface related classes hashset, linkedHashset, TreeSet
+// Default constructor
+Set<String> names = new HashSet<>();
+
+// Constructor with initial capacity
+Set<Integer> numbers = new HashSet<>(50);
+
+// Constructor with capacity and load factor
+Set<Double> prices = new HashSet<>(100, 0.6f);
+
+// Constructor from existing collection
+List<String> list = Arrays.asList("A", "B", "C");
+Set<String> fromList = new HashSet<>(list);
+
+## Important Notes:
+
+-- The default initial capacity (16) is good for most use cases
+-- Higher initial capacity reduces resizing operations but consumes more memory
+-- Lower load factor reduces hash collisions but increases memory usage
+-- All constructors create a HashMap instance internally to store elements because hashmap and set don't contained any
+   duplicate element, if we set value null in hashmap, then it become SET.
+-- The order of elements is not guaranteed (for ordered sets, use LinkedHashSet)
+
 ## Key Features of Set
 
 ✅ No Duplicate Elements – Ensures uniqueness (only one null element allowed in most implementations).
