@@ -1,4 +1,4 @@
-package april8.Comparator;
+package april8Comparator_Comparable_HashDemo.Comparator;
 
 import java.util.ArrayList;
 import java.util.Collections;

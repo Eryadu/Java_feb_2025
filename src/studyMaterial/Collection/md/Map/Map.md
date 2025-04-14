@@ -21,3 +21,6 @@ https://www.programiz.com/java-programming/concurrentmap
 
 // For ConcurrentHashMap
 https://www.programiz.com/java-programming/concurrenthashmap
+
+// For WeakHashMap
+https://www.programiz.com/java-programming/weakhashmap

@@ -1,4 +1,4 @@
-package april8.ComparableInterface;
+package april8Comparator_Comparable_HashDemo.ComparableInterface;
 
 // pass Product as comparable cause by default it compare String and integer
 public class Product implements Comparable<Product>{

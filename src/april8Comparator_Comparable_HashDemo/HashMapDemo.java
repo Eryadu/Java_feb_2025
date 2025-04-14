@@ -1,4 +1,4 @@
-package april8;
+package april8Comparator_Comparable_HashDemo;
 import java.util.*;
 
 public class HashMapDemo {

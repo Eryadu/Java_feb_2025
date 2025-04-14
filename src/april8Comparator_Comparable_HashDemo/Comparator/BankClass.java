@@ -1,6 +1,4 @@
-package april8.Comparator;
-
-import java.util.Comparator;
+package april8Comparator_Comparable_HashDemo.Comparator;
 
 public class BankClass {
     public int accountID;
