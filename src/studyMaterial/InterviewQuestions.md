@@ -12,3 +12,9 @@
 12. Put and Patch difference
 13. HTPPs response Code (https://www.w3schools.com/tags/ref_httpmessages.asp)
 14. Difference between Comparator and Comparable
+15. Internal implementation of Hashmap?
+16. Equal and Hashcode contract?
+16. Why we need map instead of list or set?
+17. For interview purpose always check version first for projects i.e.Current version?
+    Care about Version? Maven version? JUnit Macitos?
+    Craft which version depend on which ?

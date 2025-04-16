@@ -1,5 +1,9 @@
 ## refer this link https://www.programiz.com/java-programming/set
 
+1. Set is the child interface of Collection.
+2. if we want to represent a group of individual objects as a single entity, where duplicate are not allowed and insertion
+    order is not preserved then we should go for set
+3. Set interface doesn't contain any new methods. So we have to use only Collection interface methods
 ## Set Interface in Java
    The Set interface in Java is part of the Java Collections Framework (JCF) and represents a collection that does not 
    allow duplicate elements. It models the mathematical set abstraction and extends the Collection interface.
