@@ -1,6 +1,5 @@
-package studyMaterial.functionalInterface;
+package practice.Collections.ArrayList.FunctionalInterface;
 
-import javax.sound.midi.Soundbank;
 import java.util.Scanner;
 
 @FunctionalInterface

@@ -1,4 +1,4 @@
-package studyMaterial.functionalInterface;
+package practice.Collections.ArrayList.FunctionalInterface;
 
 
 import java.util.Scanner;

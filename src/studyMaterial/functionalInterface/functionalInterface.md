@@ -200,8 +200,7 @@ Explanation: In the example above, rather than implementing the abstract method 
 method, we are overriding it in our class. Then we create an object of our class to call this method greeting.
 
 ## More Examples
-A Functional Interface Can Have Methods of Object Class
-
+1. A Functional Interface Can Have Methods of Object Class
 Example: Let us take an example of a functional interface in Java having a single abstract method and multiple methods 
 of the object class.
 
@@ -219,7 +218,7 @@ Explanation: In the interface above, hashCode(),toString(), and equals() are the
 We can have any number of methods of object classes in our Functional Interface. These object classes don't have an 
 implementation in the interface as well.
 
-Functional Interface Having Multiple Default and Static Classes
+2. Functional Interface Having Multiple Default and Static Classes
 Let us see an example of a Functional interface in Java having default and static classes.
 
 // interface implementation
@@ -385,10 +384,10 @@ second one. Negative if the second one is greater and zeroes if both are the sam
 
 ## Types of Functional interfaces
    Functional interfaces in Java are mainly of four types:
-1. Consumer
-2. Predicate
-3. Function
-4. Supplier
+1. Function
+2. Supplier
+3. Consumer
+4. Predicate
 
 1. Function
    The function type functional interface receives a single argument, processes it, and returns a value. One of the 
@@ -402,8 +401,9 @@ public interface Function<T, R>{
 R apply(T t);
 }
 Explaination: @FunctionalInterface is an annotation to ensure our interface is functional only. The function takes two 
-generic types. The first one T is the type it takes a parameter and R is the return type of the abstract method. apply() 
-is the abstract method of the Function.
+generic types. The first one T is the type it takes a parameter and R is the return type of the abstract method. 
+
+## Abstract Method : apply() is the abstract method of the Function.
 
 Example:
 
@@ -428,7 +428,7 @@ public class Sample{
     public static void main(String[] args){
         
         // function to get the name of the employee name from its id
-        Function<Integer, String> get = (Integer ID) -> {
+        Function<Integer, String> getEmploye = (Integer ID) -> {
             if(Employee.containsKey(ID)) return Employee.get(ID);
             else
                 return "Invalid ID";
@@ -441,8 +441,8 @@ public class Sample{
         add("Deborah Sprightly", 1029);
         add("Ethan Hardy", 1025);
         
-        // using get method of Function to fetch name of the employee
-        System.out.println("ID = 1029, Name = "+get.apply(1029));
+        // using getEmploye method (of Function) of Function to fetch name of the employee
+        System.out.println("ID = 1029, Name = "+getEmploye.apply(1029));
     }
 }
 
@@ -518,13 +518,14 @@ returns the result of it.
    take any arguments. On calling the supplier it simply returns a value. Supplier is a generic interface thus, it takes 
    the type of value in <> (Angular brackets) while implementing to be returned by the get() method.
 
+## Abstract method : get() is the abstract method of the Supplier.
 Syntax:
 @FunctionalInterface
 public interface Supplier<T>{
 T get();
 }
 
-The supplier takes only one generic type, the type of data it is going to return. get() is the abstract method of the Supplier.
+The supplier takes only one generic type, the type of data it is going to return. 
 
 Example:
 
@@ -545,7 +546,7 @@ Thus, to call message we have to use message.get().
 
 3. Consumer
    The Consumer functional interface in Java accepts a single gentrified argument and doesn't return any value.
-
+## Abstract Method : accept() is the abstract method of the Consumer.
 Syntax:
 
 
@@ -554,8 +555,7 @@ public interface Consumer<T>{
 void accept(T t);
 }
 
-The consumer takes one generic type, the type of data it is going to take as a parameter. accept is the abstract 
-method of the Consumer.
+The consumer takes one generic type, the type of data it is going to take as a parameter. 
 
 A. BiConsumer
    It takes two arguments one generic, and the other of primitive type. It also doesn't return a value.
@@ -595,14 +595,14 @@ You're eligible to participate in school elections
 -- Predicate interface in Java has 3 default methods and(),negate(), and or and 1 static method isEqual() other than 
    abstract method test.
 
+## Abstract method : test() is the name given to its abstract method.
 Syntax:
 
 public interface Predicate<T>{
 boolean test(T t);
 }
 
-Predicate's abstract method returns a boolean value. It takes a paramters of the type T. test() is the name given to 
-its abstarct method.
+Predicate's abstract method returns a boolean value. It takes a parameters of the type T. 
 
 Example:
 
@@ -656,7 +656,7 @@ B. Bi-Predicate
 
 ## key Points
 Functional interface can have only one abstract method. It can contain multiple default and static methods. We use
-@FunctionalInterface Annotation is not mandatory but it is useful to ensure that the interface has only one abstract method.
+@FunctionalInterface Annotation is not mandatory, but it is useful to ensure that the interface has only one abstract method.
 abstract keyword is optional as by default all the methods of the interface are abstract only.
 
 ## The java.util.function contains various in-built functional interfaces from Java 8 onwards like Function, Consumer, 
