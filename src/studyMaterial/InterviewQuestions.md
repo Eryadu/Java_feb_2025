@@ -19,3 +19,4 @@
 17. For interview purpose always check version first for projects i.e.Current version?
     Care about Version? Maven version? JUnit Macitos?
     Craft which version depend on which ?
+18. CI/CD pipeline ? Why use jenkins? Jenkins file? what type of file jenkins create?
