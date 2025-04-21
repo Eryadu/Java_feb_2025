@@ -1,7 +1,7 @@
 ## What is the Difference Between List.of and Arrays.asList?
 1. Mutability –
-   Arrays.asList is immutable which means that you cannot add or remove elements from the list.
-   However, you can modify the existing elements in the list.
+   Arrays.asList is immutable which means that you can modify the existing elements in the list, but cannot add or
+   remove elements from the list.
    Example –
 
         String[] array = {"apple", "banana", "cherry"};

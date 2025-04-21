@@ -47,7 +47,7 @@ static final int hash(Object key) {
 int h;
 return (key == null) ? 0 : (h = key.hashCode()) ^ (h >>> 16);
 }
--- Determines bucket index: (capacity - 1) & hash
+-- Determines bucket index: (capacity - 1) & hashcode // Apply Bitwise AND operator
 
 ## TreeSet Implementation
 

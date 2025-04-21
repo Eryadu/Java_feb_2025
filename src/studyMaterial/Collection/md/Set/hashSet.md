@@ -1,22 +1,22 @@
 ## Point to note
 1. The underlying data structure is hashtable.
-2. Duplicate are not allowed. If we are trying to insert duplicates, we don't get any complietime or runtime errors.
+2. Duplicate are not allowed. If we are trying to insert duplicates, we don't get any compile time or runtime errors.
    add( ) method simply returned false.
 3. Insertion order is not preserved and all objects will be inserted based on hash-code of objects.
 4. Heterogeneous objects are allowed.
 5. 'null' insertion is possible
-6. Implements Serializable and Clonable interfaces but not Random Access
-   7. HashSet is the best choice, if our frequent operation is Search operation
+6. Implements Serializable and Cloneable interfaces but not Random Access
+7. HashSet is the best choice, if our frequent operation is Search operation
 
-      Collection (I-1.2 version)
-               |
-         Set (I-1.2 Version)
-      |                          |
-   HashSet(C-1.2 v)    SortedSet(I-1.2v)
-      |                       |     
-   Linked-hashSet(C-1.4V)    NavigableSet(I-1.6V)
-                                 |  
-                              TreeSet(C-1.2 V)
+   Collection (I-1.2 version)
+            |
+      Set (I-1.2 Version)
+   |                          |
+HashSet(C-1.2 v)    SortedSet(I-1.2v)
+   |                       |     
+Linked-hashSet(C-1.4V)    NavigableSet(I-1.6V)
+                              |  
+                           TreeSet(C-1.2 V)
 
 
 

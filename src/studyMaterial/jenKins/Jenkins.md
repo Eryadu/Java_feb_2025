@@ -1,3 +1,8 @@
+## to check jenkins is running check command on jenkins install on aws,
+
+https://www.jenkins.io/doc/tutorials/tutorial-for-installing-jenkins-on-AWS/
+command to start jenkins : sudo systemctl start jenkins
+then copy public ipv4 and paste in web with :8080
 
 cat /Users/yadavgupta/.jenkins/secrets/initialAdminPassword use this command to open jenkin on local to find password
 

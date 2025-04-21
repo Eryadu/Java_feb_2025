@@ -147,7 +147,7 @@ Hello! Potter
 
 2. By Implementing the Interface
    Another way is to implement the interface in our class. By doing so we will have to override the abstract method. 
-   Then to call the method we are supposed to create the object of our class and use the following syntax obj.AbstarctMethod().
+   Then to call the method we are supposed to create the object of our class and use the following syntax obj.AbstractMethod().
 
 Syntax:
 
@@ -407,7 +407,7 @@ generic types. The first one T is the type it takes a parameter and R is the ret
 
 Example:
 
-For instance, say we have data of employees. In this data, we can add new employees using the add() method and we can 
+For instance, say we have data of employees. In this data, we can add new employees using the add() method, and we can 
 search for existing employees using the Function interface.
 
 import java.util.function.Function;
@@ -448,7 +448,8 @@ public class Sample{
 
 Output:
 
-ID = 1029, Name = Deborah Sprightly
+ID = 1029, Name = Deborah Sprightly // when we try to search using key it always return value associated with key.
+
 We are importing Function, a functional interface in our class. Employee HashMap stores the id and name of the employee. 
 add() method checks if the id already exists, else it adds it to the hashmap. In the main method, we are using the Function
 interface to define get that returns the name of the employee from their id. We are using a lambda expression to implement

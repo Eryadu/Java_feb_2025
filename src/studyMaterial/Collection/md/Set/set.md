@@ -30,7 +30,7 @@ Set<String> fromList = new HashSet<>(list);
 -- The default initial capacity (16) is good for most use cases
 -- Higher initial capacity reduces resizing operations but consumes more memory
 -- Lower load factor reduces hash collisions but increases memory usage
--- All constructors create a HashMap instance internally to store elements because hashmap and set don't contained any
+-- Important : All constructors create a HashMap instance internally to store elements because hashmap and set don't contained any
    duplicate element, if we set value null in hashmap, then it become SET.
 -- The order of elements is not guaranteed (for ordered sets, use LinkedHashSet)
 

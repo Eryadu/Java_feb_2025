@@ -2,6 +2,31 @@
 ## LinkedList is a fundamental Java collection /or data Structure that implements both the List and Deque interfaces, providing a 
    doubly-linked list data structure. Unlike ArrayList, LinkedList excels at frequent insertions/deletions but has slower
    random access.
+## The underlying data structure is Double Linked List
+-- Insertion order is preserved.
+-- Duplicates are allowed.
+-- Heterogeneous Objects are allowed.
+-- Null insertion is possible
+-- Linked list implements Serializable abd Clonable interfaces but not RandomAccess interface
+-- Linked list is the best choice if our frequent operation is insertion or deletion in the middle.
+-- LinkedList is the worst choice if our frequent operation is retrieval operation
+-- Usually we can use LinkedList to implement stacks and Queues to provide support for this requirement linked list 
+   class define following specific methods:  void addFirst();
+                                             void addLast();
+                                             Object getFirst();
+                                             Object getLast();
+                                             Object removeFirst();
+                                             void removeLast();
+
+
+## Difference ArrayList and Linked List
+            ArrayList                                          LinkedList
+-- It is the best choice if our frequent operation    It is the best choice if our frequent op is insertion and Deletion.
+   is retrieval
+-- ArrayList is worst case for frequent op are        LinkedList  is the worst choice if our frequent operation is retrival
+   insertion and Deletion.
+-- Underlying DS is resizable or growable Array       DS is double linked list
+-- Implement Random Access interface                  Doesn't support RandomAccess interface.
 
 1. Key Features
 
@@ -69,8 +94,8 @@ list.peek(); // View head (O(1))
 5. Performance Comparison
 
 Operation	        LinkedList	      ArrayList
-get(index)	            O(n)	        O(1)
-add(element)	        O(1)	     O(1) amortized
+get(index)	            O(n)	       O(1)
+add(element)	        O(1)	       O(1) amortized
 add(index, element)	    O(n)	       O(n)
 remove(index)	        O(n)	       O(n)
 remove(element)	        O(n)	       O(n)

@@ -1,13 +1,32 @@
 ## refer this link https://www.programiz.com/java-programming/set
 
+## Array vs ArrayList
+
+Size        Array have a fixed size, which must be specified      Dynamically resizable, allowing flexible size adjustment
+            during declaration.                                   during runtime.
+
+DataType    Support primitive datatype as wel as objects          Doesn't support primitive, stores only objects
+
+Element     Allow direct access to elements using                 Elements can be accessed using methods like get(index)
+Access      index notation
+
+Built-in    Don't have built-in methods for                       Built-in methods for adding, removing, and manipulating
+Method      manipulation or resizing                              elements
+
+Automatic   Doesn't support                                       Automatically resize itself when the number of elements,
+resizing                                                          exceeds its capacity.
+
 ## ArrayList is one of Java's most commonly used collection classes, or it is a data Structure, providing a resizable  
    array implementation of the List interface.
 ##  ArrayList is the most widely used implementation of the List interface. Some of the salient features of an ArrayList are:
    1. Elements are stored in the order of insertion.
-   2. It allows the storage of duplicate elements.
-   3.  ArrayList also supports null elements.
+   2. It allows the storage of duplicate elements. 
+   3. ArrayList also supports null elements.
+   4. Heterogeneous objects are allowed [except TreeMap and TreeSet, everywhere heterogeneous objects are allowed in 
+      collections]
+   5. ArrayList is introduced in java 1.2.
 
-1. Key Features
+1.Key Features
 
 ✔ Dynamic resizing   - Grows automatically when full
 ✔ Fast random access - O(1) time for get(index) and set(index)
@@ -110,8 +129,8 @@ String[] array = list.toArray(new String[0]);
 // Array to ArrayList
 ## Note : As Array is not a collection so, to convert Array to Arraylist, first convert Array to List (Collections), then 
    pass that List to anywhere for conversion. Ex. Between Collections
-List<String> list = Arrays.asList(array); // Fixed-size
-List<String> realList = new ArrayList<>(Arrays.asList(array)); // Mutable
+List<String> list = Arrays.asList(array); // Fixed-size // return Set
+List<String> realList = new ArrayList<>(Arrays.asList(array)); // Mutable // return Array
 
 // Between Collections
 Set<String> set = new HashSet<>(list); // Remove duplicates

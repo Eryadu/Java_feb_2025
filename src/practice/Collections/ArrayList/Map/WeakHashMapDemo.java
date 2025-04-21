@@ -1,4 +1,4 @@
-package studyMaterial.Collection.md.Map;
+package practice.Collections.ArrayList.Map;
 
 import java.util.HashMap;
 import java.util.WeakHashMap;

@@ -20,9 +20,9 @@
 -- Automatically sorts elements upon insertion.
 -- Guarantees O(log n) time for add, remove, and contains.
 -- Internal Structure
-[D]
-/   \
-[B]   [F]
+   [D]
+  /    \
+ [B]   [F]
 /  \   /  \
 [A] [C][E] [G]
 (Elements are stored in a sorted hierarchical structure.)

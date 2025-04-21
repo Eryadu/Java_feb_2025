@@ -167,13 +167,13 @@ Q: which of the following HashCode method appropriate for this Person class?
 { return age + ssn;  // .equal() returns True , name and age match but hashcode diff due to diff ssn.
 }
 
-3. public int hashCode()
+3. public int hashCode()  // .equal () use name and age parameters
 { return name.hashCode + age;
 }
 
 4. no restriction
 
-Answer is 3. // based on which parameter use .equal() method, it is highly recommended to use the same parameter
+Answer is 3. // based on which parameter uses in .equal() method, it is highly recommended to use the same parameter
                 to override the hashCode(), so it gave correct implementation
 
 
