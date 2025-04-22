@@ -1,3 +1,5 @@
+
+
 ## Generics in Java allow you to create type-safe classes, interfaces, and methods that can work with different data
    types while providing compile-time type checking. This avoids runtime errors like ClassCastException and eliminates
    the need for explicit type casting.
