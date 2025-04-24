@@ -1,3 +1,41 @@
+// Must refer april22 class 
+
+// Focus on Internal implementation of Equal() and HashCode()
+
+    public boolean equals(Object o) {
+    if (this == o) return true;
+    if (o == null || getClass() != o.getClass()) return false;
+
+    MyClass myClass = (MyClass) o;
+    return field1.equals(myClass.field1) && 
+           field2 == myClass.field2;
+    }
+    @Override
+    public int hashCode() {
+    int result = field1 != null ? field1.hashCode() : 0;
+    result = 31 * result + field2; // formula to calculate hashcode.
+    return result;
+    }
+// its uses Objects.hash() until Java 7
+## Override equal() and hashcode() is must when we are taking any object instead of Wrapper class i.e.Map<Employee, Integer>
+because equal() and hashcode() will use the same properties to calculate hashcode and match the key. If we don't override
+then it will calculate by default method in object class. Example hashcode() calculate hashcode based on memory reference
+and equal() by default use == instead of .equal().
+-- To calculate the correct hash we always need to override the equal() and hashcode(), with the same parameter we want to
+pass and want to calculate hashcode.
+
+    @ Override
+    public boolean equals(Object o) {
+    if (this == o) return true;
+    if (o == null || getClass() != o.getClass()) return false;
+    Person person = (Person) o;
+    return age == person.age && Objects.equals(name, person.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, age); // its use the same parameter to calculate hash.
+    }
 ## hashCode() and equals() Contract in Java
    The relationship between hashCode() and equals() is governed by a critical contract that all Java objects must follow 
    when these methods are overridden.
@@ -82,8 +120,9 @@ private int age;
 4. if r1.equal(r2) is false, then r1==r2 is always false
 
 ## Difference b/w == operator and equal() method
--- if there is no relation between argumental type, .equal() method would not rise any compile or run time error, it 
-   always returns FALSE, and == always rise Compile time error i.e. incomparable type java.lang.String and java.lang.StringBuffer
+-- if there is no relation between argument type (One is String and Other is StringBuilder, .equal() method would not 
+   rise any compile or run time error, it always returns FALSE, and == always rise Compile time error i.e. incomparable 
+   type java.lang.String and java.lang.StringBuffer
 String s1 = new String("Yad");
 String s2 = new String("Yad");
 StringBuffer sb1 = new StringBuffer("Yad");
@@ -120,8 +159,8 @@ sout(s1.equals(sb1))-->False
 4. If Hashcode of two objects are not equal, then objects are always not equal by .Equal().
 
 ## In String class under all collections , under Wrapper class .Equal() is Override for content comparison, hence it is
-   highly recommended to override equal method in our class for content comparison. But in StringBuffer, we cannot override .Equal
-   method, it returns false always
+   highly recommended to override equal method in our class for content comparison. But in StringBuffer, we cannot override
+   .Equal method, it returns false always
    
 ## In String class .equal() is override for content comp, hence Hashcode() is override to generate HC based on content
  String s1 = new String ("Yad");
@@ -144,13 +183,13 @@ Class Person{
   {
    if(obj instanceOf Person)
    {
-     Person p = (Person) obj;
-     if(name.equal(person.name) && age == p.age)
-     { return true;
-     }
-      else{
-      return false;
-      }
+       Person p = (Person) obj;
+       if(name.equal(person.name) && age == p.age)
+       { return true;
+       }
+       else{
+       return false;
+       }
    }
   else
   { return false;

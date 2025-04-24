@@ -15,8 +15,12 @@
 15. Internal implementation of Hashmap?
 16. Internal implementation of HashSet?
 16. Equal and Hashcode contract?
+17. Focus on how put() and get() will work?
+18. Why we need to override Equal() and Hashcode() method ? check April22 readme
 16. Why we need map instead of list or set?
 17. For interview purpose always check version first for projects i.e.Current version?
     Care about Version? Maven version? JUnit Macitos?
     Craft which version depend on which ?
 18. CI/CD pipeline ? Why use jenkins? Jenkins file? what type of file jenkins create?
+19. Why we use Concurrent collections?
+20. 
