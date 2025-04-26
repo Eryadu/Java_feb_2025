@@ -23,4 +23,10 @@
     Craft which version depend on which ?
 18. CI/CD pipeline ? Why use jenkins? Jenkins file? what type of file jenkins create?
 19. Why we use Concurrent collections?
-20. 
+20. Why SCP concept is available only for String object but not for StringBuffer ? // Refer String notes(StudyMaterial)
+   because all literal/constant store in SCP, and all mutable object store in Heap
+21. Why String Objects are immutable whereas StringBuffer objects are mutable?
+   Because if 1000 objects reference to same SCP, and if change reference of any one object then it effect all other object
+   reference that's why Strings are immutable so there reference can't be changed.
+22. In addition to String Objects, any other objects are immutable in Java ?
+   All Wrapper class are immutable too.
