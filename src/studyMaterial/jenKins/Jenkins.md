@@ -1,3 +1,5 @@
+## Poll SCM : Means whenever there is any change in project it automatically trigger to make build.
+
 ## to check jenkins is running check command on jenkins install on aws,
 
 https://www.jenkins.io/doc/tutorials/tutorial-for-installing-jenkins-on-AWS/

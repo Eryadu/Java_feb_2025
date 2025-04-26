@@ -1,5 +1,5 @@
 Jenkins - Automate, build, test, deploy
-IDE - Intigratted development environment ( we can write code, compile, and see output)
+IDE - Integrated development environment ( we can write code, compile, and see output)
 
 CRON job-- Crontab.guru to scheduler ?
 
