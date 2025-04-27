@@ -21,7 +21,7 @@ pay per use
 Scaling -- Horizontal scaling / vertical scaling
 Redundancy -- multiple copies at different location by backup the data, help to save data
 
-## Latency: how fast data is accessible when anyone try to accesing it. Latency measures in nanoseconds
+## Latency: how fast data is accessible when anyone try to accessing it. Latency measures in nanoseconds
 
 Cons:
 
@@ -59,14 +59,14 @@ Orchestra?
 
 Synchronous v/s Asynchronous ? response immediately 
 
-Async tools -- Rabbit MQ, Kafta, AMQ, IBMMQ, Java M S
+Async tools -- Rabbit MQ, Kafka, AMQ, IBMMQ, Java M S
 
 AWS - SQS/SNS - Simple Queue Service, Simple Notification Service
 
 KafKa ? Read of it 
 Event Drive Architecture https://aws.amazon.com/event-driven-architecture/
 
-Alex xu system design ? must read to undersatnd system design
+Alex xu system design ? must read to understand system design
 https://github.com/mukul96/System-Design-AlexXu/blob/master/System%20Design%20Interview%20An%20Insider’s%20Guide%20by%20Alex%20Xu%20(z-lib.org).pdf
 
 
