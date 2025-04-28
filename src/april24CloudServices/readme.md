@@ -108,4 +108,30 @@ Scaling ?
 Horizontal Scaling V/s Vertical Scaling
 
 
+Refer Technical guftgu (Bhupinder rajput)
+Docker?
+Container is like a virtual machine
+Docker is a tool which create this V.M. Docker is actual a company name, and it's name is docker engine.
+Hypervisor -- which help to make environment virtual or help to make virtual machine 
+Docker is an advance version of virtualization/ to make containerization
 
+Container does not have any operating system (take all the dependency from docker hub)
+|
+Docker Engine (Compare with hypervisor)
+|
+O.S
+|
+Hardware (Our machine)
+
+-- Docker is an open source Centralised platform designed to create, deploy and run application.
+-- Docker uses Container on the host O.S to run application. It allows applications use the same linux kernel as a System
+   on the host computer, rather creating a whole virtual O.S.
+-- We can install docker on any O.S but Docker Engine runs natively on Linux distribution, means docker runs itself on
+   linux O.S always under the hood.
+-- Docker written in 'GO' language
+-- Docker is a tool that performs OS level Virtualization, also knows as Containerization.
+-- Before Docker, many user faces the problem that particular code is running  in the developer's system but not in the 
+   User's System.
+-- Docker was first release in March 2013. It is developed by Solomon Hykes and Sebastian Patil.
+-- Docker is a set of Platform as a service that uses O.S level Virtualization whereas VMWare uses hardware level
+   virtualization
