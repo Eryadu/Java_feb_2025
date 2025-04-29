@@ -208,6 +208,7 @@ lambda expression. To infer its type, it looks at the left-hand side of the assi
 that expects an instance of the StringToIntMapper interface; it verifies that the lambda
 expression conforms to the declaration of the map() method in the StringToIntMapper interface;
 finally, it infers that the type of the lambda expression is the StringToIntMapper interface type.
+
 ## Why do we need lambda ?
 Java has supported object-oriented programming since the beginning. In object-oriented
 programming, the program logic is based on mutable objects. Methods of classes contain the
@@ -237,3 +238,33 @@ return str.length();
 };
 // Using a lambda expression
 StringToIntMapper mapper = (String str) -> str.length();
+
+## A lambda expression does not have four parts.
+• A lambda expression does not have a name.
+• A lambda expression does not have a return type. It is inferred by the compiler from the
+  context of its use and from its body.
+• A lambda expression does not have throws clause. It is inferred from the context of its use
+ and its body.
+• A lambda expression cannot declare type parameters. That is, a lambda expression
+  cannot be generic. It's inferred by compiler from the context of its use.
+
+## target Typing
+
+The compiler infers the type of a lambda expression. The context in which a lambda expression is used expects
+a type, which is called the target type. The process of inferring the type of a lambda expression from the context is
+known as target typing. Consider the following pseudo code for an assignment statement where a variable of type T is
+assigned a lambda expression:
+T t = <LambdaExpression>;
+
+The target type of the lambda expression in this context is T. The compiler uses the following rules to determine
+whether the <LambdaExpression> is assignment compatible with its target type T:
+• T must be a functional interface type.
+• The lambda expression has the same number and type of parameters as the abstract method
+  of T. For an implicit lambda expression, the compiler will infer the types of parameters from
+  the abstract method of T.
+• The type of the returned value from the body of the lambda expression is assignment
+  compatible to the return type of the abstract method of T.
+• If the body of the lambda expression throws any checked exceptions, those exceptions must
+be compatible with the declared throws clause of the abstract method of T. It is a compile-time
+error to throw checked exceptions from the body of a lambda expression, if its target type's
+method does not contain a throws clause.

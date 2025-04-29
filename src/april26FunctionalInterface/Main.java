@@ -16,9 +16,9 @@ public class Main {
         System.out.println(test.display(12));
 
         UtilityC utilityC = new UtilityC();
-        CustomValidator customValidator = new CustomValidator();
+        // CustomValidator customValidator = new CustomValidator();
 
-        // Old approach
+        // Traditional approach
         /*IValidate validate = new IValidate() {
             @Override
             public boolean validate(Integer i){
@@ -28,9 +28,11 @@ public class Main {
 
         IValidate validate = i -> i%45==0;
         //utilityC.validator(customValidator , 45);
+
+        // We can pass variable of Interface
         //utilityC.validator(validate , 45);
 
-        // we can also pass only logic
+        // We can also pass only logic
         utilityC.validator(i -> i%45==0, 45);
 
     }

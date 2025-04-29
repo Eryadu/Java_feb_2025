@@ -4,6 +4,14 @@
    and avoid using lengthy codes for the anonymous class implementation. Various built-in interfaces were declared with 
    @FunctionalInterface annotation and made functional from Java 8. They are of 4 types, Function, Consumer, Predicate, 
    and Supplier.
+ // By default variable declared in Functional Interface are public, Static, final
+
+## Variables are public static final.
+That means:
+public → visible everywhere.
+static → belongs to the interface itself (not to any instance).
+final → cannot be changed after being assigned (it's a constant).
+This is true for all variables in interfaces, not just functional interfaces.
 
 ## What is Functional Interface in Java?
    Java is an object-oriented programming language i.e. everything in java rotates around the java classes and their objects.
@@ -73,6 +81,9 @@ interfaceName temp = (/*parameters*/) -> {
 -- To implement the abstract method of a functional interface in Java, we can either use lambda expression or we can 
    implement the interface to our class and override the method. In the syntax above we are using a lambda expression.
 
+## Annotation we used just if any other developer come to work on same code, so they know its functional interface,
+because if there is no annotation system will not show any error if more than one abstract method would be added but 
+compile time it show error. With Annotation mentioned , dev immidiately get error
 ## Let us understand the syntax of functional interfaces with a simple example.
 
 // interface
@@ -204,6 +215,9 @@ method, we are overriding it in our class. Then we create an object of our class
 Example: Let us take an example of a functional interface in Java having a single abstract method and multiple methods 
 of the object class.
 
+// means functional interface have more than one abstract method but condition is that, other methods should be redefined
+in their parent class. like equal() and hashcode().
+
 @FunctionalInterface
 interface ObjectClassMethods{
 // abstract method
@@ -223,7 +237,7 @@ Let us see an example of a Functional interface in Java having default and stati
 
 // interface implementation
 @FunctionalInterface
-interface StaticandDefaultMethods{
+interface StaticAndDefaultMethods{
 // abstract method
 int square(int x);
 // default methods
@@ -400,7 +414,7 @@ Syntax:
 public interface Function<T, R>{
 R apply(T t);
 }
-Explaination: @FunctionalInterface is an annotation to ensure our interface is functional only. The function takes two 
+Explanation: @FunctionalInterface is an annotation to ensure our interface is functional only. The function takes two 
 generic types. The first one T is the type it takes a parameter and R is the return type of the abstract method. 
 
 ## Abstract Method : apply() is the abstract method of the Function.
