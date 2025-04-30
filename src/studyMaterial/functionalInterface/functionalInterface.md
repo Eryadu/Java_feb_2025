@@ -35,6 +35,12 @@ This is true for all variables in interfaces, not just functional interfaces.
 -- We'll create an instance using lambda for the abstract method while keeping the default and static methods
    check example Using StaticAndDefaultMethod
 
+## Functional interfaces can be divided into the following types:
+1. Consumer and Bi-consumer
+2. Predicate and Bi-predicate
+3. Function and Bi-Function
+4. Supplier
+
 ## Lambda expressions are anonymous (don't have names) shortcode blocks that can take parameters and return a value 
    just like methods.
 
