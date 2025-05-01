@@ -268,3 +268,33 @@ whether the <LambdaExpression> is assignment compatible with its target type T:
 be compatible with the declared throws clause of the abstract method of T. It is a compile-time
 error to throw checked exceptions from the body of a lambda expression, if its target type's
 method does not contain a throws clause.
+
+## lambda expression cannot redefine variables with the same name that already exist in the enclosing scope.
+The following code for a lambda expression inside a method generates a compile-time error as its parameter
+name msg is already defined in the method's scope:
+public class Test {
+public static void main(String[] args) {
+String msg = "Hello";
+// A compile-time error. The msg variable is already defined and
+// the lambda parameter is attempting to redefine it.
+Printer printer = msg -> System.out.println(msg);
+}
+}
+
+The following code generates a compile-time error for the same reason that the local variable name msg is in
+scope inside the body of the lambda expression and the lambda expression is attempting to declare a local variable
+with the same name msg:
+public class Test {
+public static void main(String[] args) {
+String msg = "Hello";
+Printer printer = msg1 -> {
+String msg = "Hi"; // A compile-time error
+System.out.println(msg1);
+};
+}
+}
+
+#  Tip: A lambda expression can access instance and class variables of a class whether they are effectively final or not.
+If instance and class variables are not final, they can be modified inside the body of the lambda expressions. A lambda
+expression keeps a copy of the local variables used in its body. If the local variables are reference variables, a copy 
+of the references is kept, not a copy of the objects.
