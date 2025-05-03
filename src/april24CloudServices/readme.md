@@ -21,7 +21,7 @@ pay per use
 Scaling -- Horizontal scaling / vertical scaling
 Redundancy -- multiple copies at different location by backup the data, help to save data
 
-## Latency: how fast data is accessible when anyone try to accessing it. Latency measures in nanoseconds
+## Latency: how fast data is accessible when anyone try to accesing it. Latency measures in nanoseconds
 
 Cons:
 
