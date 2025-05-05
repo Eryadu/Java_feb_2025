@@ -1,4 +1,4 @@
-Sequencial order in parallel stream was not same always
+Sequential order in parallel stream was not same always, it would be different
 Builder is design pattern ?
 Design-pattern ??
 factory?
@@ -25,3 +25,6 @@ Integer accept zero and null but primitive by default 0;
 optional ??
 null and ofNullable??
 
+How to frame answer for question ?
+Question : What is map()?
+Map is method of streams. Map is primarily accepts a Function ( functional interface). (function is identity of map())

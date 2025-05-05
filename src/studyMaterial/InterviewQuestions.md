@@ -33,3 +33,4 @@
 23. joins in Database 
 24. find the highest salary from the employee, second highest, 3rd highest 
 25. total number of employees from a specific database
+26. static class only be inner ? 
