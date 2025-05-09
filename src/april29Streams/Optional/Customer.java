@@ -1,7 +1,6 @@
-package april29Streams;
+package april29Streams.Optional;
 
 import java.util.List;
-import java.util.Optional;
 
 public class Customer {
     private int id;

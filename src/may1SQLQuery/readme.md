@@ -9,7 +9,7 @@ Amazon ElastiCache
 RDS - Relational database service
 
 Dynamo DB - alternate to MangoDB
-Redis ? - Caching database
+Redis ? - Caching database in-memory database
 
 Front End --> BackEnd 
                      Redis         MySQl
@@ -79,3 +79,6 @@ show tables; select * from Product;
 -- insert data to the product insert into Product (product_id , product_name) values (101, 'Iphone');
 
 drop table Product;
+
+
+https://www.w3schools.com/sql/sql_alter.asp

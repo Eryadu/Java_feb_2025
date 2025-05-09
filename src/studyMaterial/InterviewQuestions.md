@@ -30,7 +30,10 @@
    reference that's why Strings are immutable so there reference can't be changed.
 22. In addition to String Objects, any other objects are immutable in Java ?
    All Wrapper class are immutable too.
-23. joins in Database 
+23. joins in Database ,
 24. find the highest salary from the employee, second highest, 3rd highest 
 25. total number of employees from a specific database
 26. static class only be inner ? 
+27. String is palindrome ? write code in one line ? 
+28. Question if Table A has 50 record and Table B has 30
+    Answer - it return total >=50 records with left outer join

@@ -1,3 +1,10 @@
+create database MyDatabase;
+
+show databases ;
+
+use Employee;
+
+
 CREATE TABLE EMPLOYEE(
                          EMPLOYEE_ID numeric(18, 0) NOT NULL,
                          EMPLOYEE_NAME varchar(50) NULL,
@@ -74,3 +81,36 @@ select * from SALARY;
 select * from TITLES;
 
 commit;
+
+
+--------------------------------------------------------------------------------------------------------------
+May 8, 2025
+Create table Employee_1 (empID int primary key ,
+empName varchar (50) NOT NUll,
+empEmail varchar (30) NOT NULL UNIQUE ,
+empAge int check ( empAge >18 ) );
+
+insert into Employee_1 values (1001, 'ABC' , 'ABC@abc.com' , 19);
+
+insert into Employee_1 values (1002, 'XYZ' , 'XYZ@xyz.com' , 21);
+
+insert into Employee_1 values (1003, 'WXY' , 'WXY@wxy.com' , 23);
+select * from Employee_1;
+desc Employee_1;
+
+update Employee_1 set empName = 'CST' where empID =1003;
+
+Alter table Employee_1 add Salary int;
+
+
+SELECT * from EMPLOYEE;
+use Employee;
+
+select max(EMPLOYEE_SALARY) from EMPLOYEE;
+select min(EMPLOYEE_SALARY) from EMPLOYEE;
+
+select avg(EMPLOYEE_SALARY) from EMPLOYEE;
+
+select count(*) from EMPLOYEE where EMPLOYEE_SALARY >60000 or EMPLOYEE_ADDRESS = 'Canada';
+
+select count(*) from EMPLOYEE where EMPLOYEE_NAME LIKE 's%';
