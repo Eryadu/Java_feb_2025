@@ -37,3 +37,6 @@
 27. String is palindrome ? write code in one line ? 
 28. Question if Table A has 50 record and Table B has 30
     Answer - it return total >=50 records with left outer join
+29. Lazy loading and Egar Loading in Spring Boot?
+30. Exceptions in Beans ?
+31. 

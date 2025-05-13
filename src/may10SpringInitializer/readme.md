@@ -25,3 +25,24 @@ group-id unique through-out the world
 artifact id is unique throughout the company
 
 Read about Artifact , kind of image as we download software with .exe or .dmg
+
+How to control bean/objects
+
+1. xml - bean.xml
+2. @config annotation
+3. @component
+
+
+flat-file
+namespace which contain tags information
+
+ApplicationContext with classpathXml (only class name will pass)
+ApplicationContext with FilePath (we need to create object of file)
+
+flat file(xml) created under resources?
+building ?
+focus on spring specific exception
+noSuchBeanDefinitionException
+
+ApplicationContext is creating the Beans
+and Spring Container is Storing the Bean
