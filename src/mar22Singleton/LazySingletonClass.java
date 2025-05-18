@@ -49,5 +49,22 @@ public class LazySingletonClass {
        System.out.println(s3.str);
        System.out.println(s4.str);
 
+       /*Hashcode of s1 : 1975012498
+       Hashcode of s2 : 1975012498
+       Hashcode of s3 : 1975012498
+       Hashcode of s4 : 1975012498
+
+
+       Welcome to SingletonClass
+       you are in lazysingleton class
+       you are in lazysingleton class
+       you are in lazysingleton class
+       you are in lazysingleton class
+
+
+       YOU ARE IN LAZYSINGLETON CLASS
+       YOU ARE IN LAZYSINGLETON CLASS
+       YOU ARE IN LAZYSINGLETON CLASS
+       YOU ARE IN LAZYSINGLETON CLASS*/
    }
 }
