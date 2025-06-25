@@ -1,7 +1,7 @@
 String and integer has comparable interface by default to compare 
 ## Comparable<> ? give natural order sorting
 ## Compare two integer by natural order by implementing Comparable interface and use comparator() method, 
--- fix first element like this.id and compare it with others like this.id- employee.id
+-- fix first element like this.id and compare it with others like this.id - employee.id
    if this.id < employee.id  -vs (means less than second)
    if this.id = employee.id  0 (means equal to second)
    if this.id > employee.id  +vs (means greater than second)
@@ -13,7 +13,7 @@ String and integer has comparable interface by default to compare
 So we use other option
 Comparator Interface : we can compare everything in one without changing the main code
 In Comparator, without changing main class code we can just create new comparator class and add functionality
-(based on SOLID principle Single Class has single responsibility and Open to modify and close to ext. )
+(based on SOLID principle Single Class has single responsibility and Open to modify and close to extension)
 
 FunctionalInterface() ?
 have one abstract method and all other default method
