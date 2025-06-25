@@ -1,0 +1,1 @@
+https://medium.com/@davoud.badamchi/effective-object-mapping-in-spring-boot-a-comprehensive-guide-4039043b386e
