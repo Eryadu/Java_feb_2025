@@ -2,6 +2,8 @@
    created and to prevent external instantiation of the class. The Singleton pattern is a design pattern that restricts 
    the instantiation of a class to a single object, and the private constructor plays a key role in achieving this.
 
+## Singleton Violation Case & Solution
+https://javatechonline.com/singleton-design-pattern-in-java-with-all-scenarios/
 ## Forms of Singleton Class Pattern
 
 There are two forms of singleton design patterns, which are:
